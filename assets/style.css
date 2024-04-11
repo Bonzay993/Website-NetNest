@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    font-family: Roboto;
+    color:#777777;
+}    
+
+header{
+    display:flex;
+    background-color: #fafafa;
+    box-shadow: 0 1px 5px #cac7c7;
+    height:80px;
+    flex-flow:row wrap;
+    align-content: center;
+    align-items: center; 
+}
+
+.logo{
+    flex:1;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:#201e1e;
+    font-size:100%;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+nav{
+    display:flex;
+    flex:5;
+    flex-flow:row wrap;
+    align-items: center;
+}
+
+#menu-left{
+    flex:1;
+    justify-content: left;
+    list-style-type: none;
+}
+
+#menu-left li, #menu-right li{
+    float:left;
+    letter-spacing: 1px;
+    padding:15px;
+}
+
+#menu-right{
+    justify-content: right;
+    list-style-type: none;
+    padding-right:30px;
+}
+
+#menu-left a, #menu-right a{
+    text-decoration: none;
+    color:#201e1e;
+}
+
+#menu-left a:hover, #menu-right a:hover{
+    text-decoration: none;
+    color:#b6b444;
+    border-radius: 2px;
+}
+
+#menu-left a{
+    font-size: 100%;
+}
+
+#menu-right a{
+    font-size:90%;
+}
