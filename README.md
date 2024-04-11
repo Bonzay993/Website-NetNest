@@ -26,3 +26,12 @@ The purpose of this project is to create an online platform where users can expl
 - Live chat support for real-time assistance.
 - Client dashboard for managing hosting accounts and accessing support resources.
 - Integration with popular content management systems for seamless website setup.
+
+## Typography and Color Scheme
+
+- **Typography:** The website utilizes a clean and modern Lato and Roboto font for readability and professionalism.
+- **Color Scheme:** The color palette includes shades of blue and gray to convey trustworthiness and professionalism. Accent colors are used sparingly to highlight important elements and calls to action.
+
+## Wireframes
+
+Wireframes for the website can be found in the `wireframes` directory of this repository. These wireframes provide a visual representation of the layout and design of the website pages.
