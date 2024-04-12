@@ -11,24 +11,17 @@ body{
     color:#777777;
 }    
 
+
+/*HEADER CSS STARTS*/
 header{
-    display:flex;
     background-color: #fafafa;
     box-shadow: 0 1px 5px #cac7c7;
     height:80px;
     flex-flow:row wrap;
     align-content: center;
-    align-items: center; 
-}
-
-.logo{
-    flex:1;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color:#201e1e;
-    font-size:100%;
-    text-transform: uppercase;
-    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
 }
 
 nav{
@@ -36,10 +29,26 @@ nav{
     flex:5;
     flex-flow:row wrap;
     align-items: center;
+    width:70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.logo{
+    flex:1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#201e1e;
+    font-size:100%;
+    padding-right: 15px;
+}
+
+.logo h2{
+    white-space: nowrap;
 }
 
 #menu-left{
-    flex:1;
+    flex:5;
     justify-content: left;
     list-style-type: none;
 }
@@ -53,7 +62,6 @@ nav{
 #menu-right{
     justify-content: right;
     list-style-type: none;
-    padding-right:30px;
 }
 
 #menu-left a, #menu-right a{
@@ -74,3 +82,44 @@ nav{
 #menu-right a{
     font-size:90%;
 }
+/*HEADER CSS ENDS*/
+
+
+/*HERO CSS STARTS*/
+
+#hero{
+    position: relative;
+    height:500px;
+    width:70%;
+    margin:0 auto;
+    align-items: top;
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.hero-text{
+    flex:2;
+    margin-top: 5%;
+    
+}
+.hero-text h1{
+    font-size: 280%;
+    max-width: 550px;
+    color:#201e1e;
+}
+
+.hero-text p{
+    padding-top: 40px;
+    max-width: 720px;
+    font-size: 150%;
+}
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    max-width:650px;
+    justify-content: right;
+}
+
+
