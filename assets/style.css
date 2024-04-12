@@ -9,6 +9,7 @@
 body{
     font-family: Roboto;
     color:#777777;
+    letter-spacing: 0.5px;
 }    
 
 
@@ -36,7 +37,6 @@ nav{
 
 .logo{
     flex:1;
-    letter-spacing: 1px;
     text-decoration: none;
     color:#201e1e;
     font-size:100%;
@@ -55,7 +55,6 @@ nav{
 
 #menu-left li, #menu-right li{
     float:left;
-    letter-spacing: 1px;
     padding:15px;
 }
 
@@ -71,22 +70,21 @@ nav{
 
 #menu-left a:hover, #menu-right a:hover{
     text-decoration: none;
-    color:#b6b444;
+    color:#bcbcd3;
     border-radius: 2px;
 }
 
 #menu-left a{
-    font-size: 100%;
+    font-size: 110%;
 }
 
 #menu-right a{
-    font-size:90%;
+    font-size:110%;
 }
 /*HEADER CSS ENDS*/
 
 
 /*HERO CSS STARTS*/
-
 #hero{
     position: relative;
     height:500px;
@@ -96,6 +94,7 @@ nav{
     display:flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    padding-top:50px;
 }
 .hero-text{
     flex:2;
@@ -105,21 +104,162 @@ nav{
 .hero-text h1{
     font-size: 280%;
     max-width: 550px;
-    color:#201e1e;
+    color:#103c75;
 }
 
 .hero-text p{
     padding-top: 40px;
-    max-width: 720px;
+    max-width: 600px;
     font-size: 150%;
+    color:#182a64
+}
+
+.checkmarks{
+    padding-top:40px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.checkmarks li{
+    padding-bottom: 5px;;
+}
+
+.checkmarks li span{
+    font-weight: bold;
+    font-size:110%;
+}
+.checkmarks li a{
+    font-size: 110%;
+    color:#150b38;
+    padding-left:5px;
+    font-weight: 400;
 }
 .hero-image{
     flex:1;
 }
 
 .hero-image img{
-    max-width:650px;
+    max-width:850px;
     justify-content: right;
 }
+/* HERO CSS ENDS*/
 
+/*PRICING CARDS START*/
+#pricing-cards{
+    width:70%;
+    margin:0 auto;
+    padding-top:200px;
+}
 
+#pricing-cards h1{
+    font-size: 240%;
+    text-align: center;
+    padding-top: 20px;
+    color:#103c75;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap:10px;
+    height:780px;
+    align-items: center;;
+}
+
+.container .card{
+    width:430px;
+    height:600px;
+    border:1px solid #b4b3e9;
+    border-radius: 5px;
+    transition:0.5s;
+}
+
+.container .card h2{
+    color:#103c75;
+    text-align: center;
+    margin-top: 40px;
+    font-size:160%;
+}
+
+.container .card p{
+    color:#201e1e;
+    text-align: center;
+    padding-top: 10px;
+    padding-left:60px;
+    padding-right:60px;
+}
+
+.container .card .save{
+    padding-top:70px;
+}
+
+.container .card3 .save{
+    padding-top:50px;
+}
+
+.save-percentage{
+    font-size:100%;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+    border-radius: 20px;
+    background-color: #b4b3e9;
+    margin-left:5px;
+    color:#0635ce
+}
+.save s{
+    font-weight: 300;
+}
+
+.price {
+    margin-top:30px;
+}
+
+.price a{
+    font-size: 300%;
+    font-weight:bold;
+    color:#103c75;
+}
+
+.price span{
+    font-size: 130%;
+    padding-right:5px;
+    font-weight: bold;
+}
+
+.container #card2 .save .save-percentage{
+    background-color: rgb(250, 199, 199);
+    color:rgb(209, 46, 46)
+}
+
+.container .card .price{
+    padding-top:30px;
+}
+#card2{
+    border:2px solid #809cf7;
+}
+
+.container .card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px #8e8dd3;
+}
+
+hr{
+    border:1px solid #c3cef3;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:20px;
+}
+
+.card-checkmarks{
+    list-style-type: none;
+    text-decoration: none;
+    padding-left:50px;
+    padding-top:30px;
+}
+
+.card-checkmarks li{
+    padding-bottom:10px;
+}
+/*PRICING CARDS END*/
