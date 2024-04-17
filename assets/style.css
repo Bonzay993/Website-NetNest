@@ -10,9 +10,17 @@ body{
     font-family: Roboto;
     color:#777777;
     letter-spacing: 0.5px;
-
 }    
 
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
 
 /*HEADER CSS STARTS*/
 header{
@@ -208,7 +216,7 @@ nav{
     border-radius: 20px;
     background-color: #b4b3e9;
     margin-left:5px;
-    color:#0635ce
+    color:#0635ce;
 }
 .save s{
     font-weight: 300;
@@ -248,7 +256,7 @@ nav{
     box-shadow: 1px 1px 10px #8e8dd3;
 }
 
-hr{
+.card-thematic-break{
     border:1px solid #c3cef3;
     margin-left:50px;
     margin-right:50px;
@@ -280,20 +288,43 @@ hr{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height:500px;
     align-items: center;
+    row-gap:10px;
 }
 
-.four-cards-container .card{
-    background-color: #0635ce;
-    border-style: 1px solid black;
-    height:500px;
-    width: 300px;
-
+.four-cards-container .card h1{
+    font-size: 260%;
+    color:#103c75;
+}
+.four-cards-container .card p{
+    padding-top:30px;
+    font-size: 120%;
+    color:#150b38;
+}
+.text-card1{
+    flex:2;
 }
 
-#four-cards .container .card2{
-    background-color: #0635ce;
-    flex:6;
-    border:1px solid red;
+.picture-card1{
+    flex:1;
 }
+
+.picture-card1 img{
+    max-width:700px;
+    float:right;
+}
+
+.text-card2{
+    flex:1;
+}
+
+.picture-card2{
+    flex:1;
+}
+
+.picture-card2 img{
+    max-width:700px;
+}
+
+
+/* REVIEWS STARTS */
