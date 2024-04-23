@@ -10,20 +10,20 @@
     <title>NetNest</title>
 </head>
 <body>
-    <header>
+    <header class="prevent-select">
         <nav>
             <a href="index.html" class="logo">
                 <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
             </a>
             <ul id="menu-left">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Reviews</a>
+                    <a href="#reviews">Reviews</a>
                 </li>
                 <li>
-                    <a href="#">Pricing</a>
+                    <a href="#pricing-cards">Pricing</a>
                 </li>
             </ul>
             <ul id="menu-right">
@@ -36,138 +36,147 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <div class="hero-text">
-            <h1>Where Reliability Meets Affordability</h1>
-            <p>Next-Level Hosting for Modern Businesses - Speed, Security, and Support Combined. Unlock Your Website's True Performance Today.</p>
-            <ul class="checkmarks">
-                <li><span>&#x2713</span> <a>Free Website Migration</a></li>
-                <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
-                <li><span>&#x2713</span> <a>First Month Free</a></li>
-            </ul>
-        </div>
-        <div class="hero-image">
-            <img src="./assets/img/hero-image.jpg"  alt="Support technicians mantaining infrastructure">
-        </div>
-    </section>
-    <section id="pricing-cards">
-        <h1>Pick Your Perfect Plan!</h1>
-        <div class="container">
-            <div class="card">
-                <h2>Premium</h2>
-                <p>Great for your personal websites</p>
-                <p class="save"><s>£11.99</s><a class="save-percentage">SAVE 80%</a></p>
-                <p class="price"><span>£</span><a>2.59</a><span>/mo</span></p>
-                <hr class="card-thematic-break">
-                <ul class="card-checkmarks">
-                    <li><span>&#x2713</span> <a>Free Website Migration</a></li>
-                    <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
-                    <li><span>&#x2713</span> <a>First Month Free</a></li>
-                </ul>
+    <main>
+        <section id="hero">
+            <div class="hero-wrapper prevent-select">
+                <div class="hero-text">
+                    <h1>Where Reliability Meets Affordability</h1>
+                    <p>Next-Level Hosting for Modern Businesses - Speed, Security, and Support Combined. Unlock Your Website's True Performance Today.</p>
+                    <ul class="checkmarks">
+                        <li><span>&#x2713</span> <a>Free Website Migration</a></li>
+                        <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
+                        <li><span>&#x2713</span> <a>First Month Free</a></li>
+                    </ul>
+                    <div class="contact-sales-btn">
+                        <a class="btn" href="./contact.html">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/img/hero-image.jpg"  alt="Support technicians mantaining infrastructure">
+                </div>
             </div>
-            <div class="card" id="card2">
-                <h2>Business</h2>
-                <p>More power and enhanced features</p>
-                <p class="save"><s>£13.99</s> <a class="save-percentage">SAVE 75%</a></p>
-                <p class="price"><span>£</span><a>3.59</a><span>/mo</span></p>
-                <hr class="card-thematic-break">
-                <ul class="card-checkmarks">
-                    <li><span>&#x2713</span> <a>Free Website Migration</a></li>
-                    <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
-                    <li><span>&#x2713</span> <a>First Month Free</a></li>
-                </ul>
+        </section>
+        <section id="pricing-cards">
+            <div class="container prevent-select">
+                <h1>Pick Your Perfect Plan!</h1>
+                <div class="card card1">
+                    <h2>Premium</h2>
+                    <p>Great for your personal websites</p>
+                    <p class="save"><s>£11.99</s><a class="save-percentage">SAVE 80%</a></p>
+                    <p class="price"><span>£</span><a>2.59</a><span>/mo</span></p>
+                    <hr class="card-thematic-break">
+                    <ul class="card-checkmarks">
+                        <li><span>&#x2713</span> <a>Free Website Migration</a></li>
+                        <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
+                        <li><span>&#x2713</span> <a>First Month Free</a></li>
+                    </ul>
+                </div>
+                <div class="card card2">
+                    <h2>Business</h2>
+                    <p>More power and enhanced features</p>
+                    <p class="save"><s>£13.99</s> <a class="save-percentage">SAVE 75%</a></p>
+                    <p class="price"><span>£</span><a>3.59</a><span>/mo</span></p>
+                    <hr class="card-thematic-break">
+                    <ul class="card-checkmarks">
+                        <li><span>&#x2713</span> <a>Free Website Migration</a></li>
+                        <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
+                        <li><span>&#x2713</span> <a>First Month Free</a></li>
+                    </ul>
+                </div>
+                <div class="card card3">
+                    <h2>Cloud Startup</h2>
+                    <p>Enjoy optimized performance & powerful resources</p>
+                    <p class="save"><s>£18.99</s> <a class="save-percentage">SAVE 55%</a></p>
+                    <p class="price"><span>£</span><a>7.99</a><span>/mo</span></p>
+                    <hr class="card-thematic-break">
+                    <ul class="card-checkmarks">
+                        <li><span>&#x2713</span> <a>Free Website Migration</a></li>
+                        <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
+                        <li><span>&#x2713</span> <a>First Month Free</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="card card3">
-                <h2>Cloud Startup</h2>
-                <p>Enjoy optimized performance & powerful resources</p>
-                <p class="save"><s>£18.99</s> <a class="save-percentage">SAVE 55%</a></p>
-                <p class="price"><span>£</span><a>7.99</a><span>/mo</span></p>
-                <hr class="card-thematic-break">
-                <ul class="card-checkmarks">
-                    <li><span>&#x2713</span> <a>Free Website Migration</a></li>
-                    <li><span>&#x2713</span> <a>24/7 Customer Support</a></li>
-                    <li><span>&#x2713</span> <a>First Month Free</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="four-cards">
-            <div class="four-cards-container">
-                
-                    <div class="card text-card1">
-                        <h1>Protecting Your Website: HostGenius's Strong Security System</h1>
-                        <p>At NetNest, ensuring the security of your website is paramount. Our robust security system provides reliable protection against cyber threats. We employ advanced measures such as DDoS protection, malware scanning, and SSL encryption to keep your website safe and secure.</p>
-                    </div>
-                    <div class="card picture-card1">
-                        <img src="./assets/img/vectorstock_3123998.jpg" alt="">
-                    </div>
-                
-                
-                    <div class="card picture-card2">
-                        <img src="./assets/img/vecteezy_security-package-for-web-hosting-and-cloud-server_.jpg" alt="Engineers making sure that service is reliable and running">
-                    </div>
-                    <div class="card text-card2">
-                        <h1>Reliability You Can Count On: NetNest's Hosting Guarantee                    </h1>
-                        <p>At NetNest, reliability is not just a promise; it's our commitment. With a steadfast infrastructure and meticulous attention to detail, we redefine hosting reliability to ensure your website is always online when it matters most. Experience the confidence of uninterrupted uptime and seamless performance with NetNest as your hosting partner.</p>
-                    </div>
+        </section>
+        <section id="four-cards">
+                <div class="four-cards-container prevent-select">
+                    
+                        <div class="card text-card1">
+                            <h1>Protecting Your Website: HostGenius's Strong Security System</h1>
+                            <p>At NetNest, ensuring the security of your website is paramount. Our robust security system provides reliable protection against cyber threats. We employ advanced measures such as DDoS protection, malware scanning, and SSL encryption to keep your website safe and secure.</p>
+                        </div>
+                        <div class="card picture-card1">
+                            <img src="./assets/img/vectorstock_3123998.jpg" alt="">
+                        </div>
+                    
+                    
+                        <div class="card picture-card2">
+                            <img src="./assets/img/vecteezy_security-package-for-web-hosting-and-cloud-server_.jpg" alt="Engineers making sure that service is reliable and running">
+                        </div>
+                        <div class="card text-card2">
+                            <h1>Reliability You Can Count On: NetNest's Hosting Guarantee                    </h1>
+                            <p>At NetNest, reliability is not just a promise; it's our commitment. With a steadfast infrastructure and meticulous attention to detail, we redefine hosting reliability to ensure your website is always online when it matters most. Experience the confidence of uninterrupted uptime and seamless performance with NetNest as your hosting partner.</p>
+                        </div>
 
-            </div>
-    </section>
-    <section id="reviews">
-        <div class="reviews-container">
-            <div class="reviews-box">
-                <div class="reviews-box-content">
-                    <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
-                    <p class="reviews-text">"Exceptional Service! I've been with several hosting providers before, but none match the reliability and efficiency of this company. Their customer support team is incredibly responsive and knowledgeable, always resolving any issues promptly. The uptime is fantastic, and their intuitive control panel makes managing my websites a breeze. Highly recommend!"</p>
-                    <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </p>
+                </div>
+        </section>
+        <section id="reviews">
+            <div class="reviews-container prevent-select">
+                <div class="reviews-box">
+                    <div class="reviews-box-content">
+                        <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
+                        <p class="reviews-text">"Exceptional Service! I've been with several hosting providers before, but none match the reliability and efficiency of this company. Their customer support team is incredibly responsive and knowledgeable, always resolving any issues promptly. Highly recommend!"</p>
+                        <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="reviews-box">
+                    <div class="reviews-box-content">
+                        <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
+                        <p class="reviews-text">"Top-Notch Hosting Provider! From the moment I signed up, I knew I made the right choice. What truly sets them apart is their dedication to customer satisfaction. Any questions or concerns I've had were addressed promptly and professionally. If you're looking for reliable hosting with exceptional support, look no further!"</p>
+                        <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="reviews-box">
+                    <div class="reviews-box-content">
+                        <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
+                        <p class="reviews-text">"Simply the Best! I've tried numerous hosting companies over the years, but none compare to the level of service and quality I've experienced here. Their servers are lightning-fast, ensuring my websites load quickly for visitors worldwide. 5 stars all the way!"</p>
+                        <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="reviews-box">
-                <div class="reviews-box-content">
-                    <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
-                    <p class="reviews-text">"Top-Notch Hosting Provider! From the moment I signed up, I knew I made the right choice. Setting up my website was effortless with their user-friendly interface, and the speed and performance have been outstanding. What truly sets them apart is their dedication to customer satisfaction. Any questions or concerns I've had were addressed promptly and professionally. If you're looking for reliable hosting with exceptional support, look no further!"</p>
-                    <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </p>
+        </section>
+        <section id="get-started">
+            <div class="get-started-container prevent-select">
+                <div class="get-started-text">
+                    <h1>Ready to get started?</h1>
+                    <p>Contact sales today!</p>
+                </div>
+                <div class="get-started-btn">
+                    <a class="btn" href="./contact.html">
+                        Contact Sales
+                    </a>
                 </div>
             </div>
-            <div class="reviews-box">
-                <div class="reviews-box-content">
-                    <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m17.227 16.67l2.19 6.742l-7.413-5.388zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326z"/></svg>Trustpilot</h1>
-                    <p class="reviews-text">"Simply the Best! I've tried numerous hosting companies over the years, but none compare to the level of service and quality I've experienced here. Their servers are lightning-fast, ensuring my websites load quickly for visitors worldwide. Moreover, their security measures provide peace of mind knowing my data is safe. Combine that with their friendly and knowledgeable support staff, and you've got a winning combination. 5 stars all the way!"</p>
-                    <p class="five-stars"> <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="get-started">
-        <div class="get-started-container">
-            <div class="get-started-text">
-                <h1>Ready to get started?</h1>
-                <p>Contact sales today!</p>
-            </div>
-            <div class="get-started-btn">
-                <a class="btn" href="./contact.html">
-                    Contact Sales
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-       <div class="footer-container">
+       <div class="footer-container prevent-select">
             <div class="footer-col-1">
                 <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
                 <form>
@@ -192,6 +201,10 @@
                 <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
                 <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p>@2024 NetNest</p>
             </div>
        </div>
     </footer>

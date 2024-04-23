@@ -22,7 +22,29 @@ hr {
     border-width: 1px;
   } 
 
+ /* main{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+  }
+*/
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  h1{
+    font-size:30px;
+    line-height: 1.5;
+  }
+  p{
+    font-size:16px;
+    line-height:1.5;
+  }
+
 /*HEADER CSS STARTS*/
+
 header{
     background-color: #fafafa;
     box-shadow: 0 1px 5px #cac7c7;
@@ -30,9 +52,9 @@ header{
     align-content: center;
     align-items: center;
     margin-bottom: 5px;
-    position: fixed;
+    position:fixed;
     width:100%;
-    z-index: 99999;
+    z-index: 99999; 
 }
 
 nav{
@@ -40,9 +62,9 @@ nav{
     flex:5;
     flex-flow:row wrap;
     align-items: center;
-    width:70%;
+    max-width:1200px;
     justify-content: center;
-    margin: auto;
+    margin:0 auto;
     
 }
 
@@ -85,32 +107,38 @@ nav{
     border-radius: 2px;
 }
 
-#menu-left a{
-    font-size: 110%;
+#menu-left a, #menu-right a{
+    font-size: 100%;
 }
 
-#menu-right a{
-    font-size:110%;
-}
 /*HEADER CSS ENDS*/
 
 
 /*HERO CSS STARTS*/
 #hero{
-    position: relative;
-    height:500px;
-    width:70%;
+    height:700px;
+    width:100%;
     margin:0 auto;
-    align-items: top;
-    display:flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    padding-top:100px;
+    display:flex;  
 }
+
+.hero-wrapper{
+    display:flex;
+    width:1200px;
+    margin:0 auto;
+    justify-content: center;
+    flex-flow: row wrap;
+    height:500px;
+    align-items: center;
+    position: relative;
+    top:130px;
+}
+
 .hero-text{
-    flex:2;
-    margin-top: 5%;
-    
+    flex-basis:50%;
+    display:flex;
+    flex-flow:row wrap;
+    gap:30px;
 }
 .hero-text h1{
     font-size: 280%;
@@ -119,20 +147,16 @@ nav{
 }
 
 .hero-text p{
-    padding-top: 40px;
     max-width: 600px;
-    font-size: 150%;
+    font-size: 120%;
     color:#182a64
 }
 
 .checkmarks{
-    padding-top:40px;
     text-decoration: none;
     list-style-type: none;
-}
-
-.checkmarks li{
-    padding-bottom: 5px;;
+    flex-basis:100%;
+    padding-bottom:14px;
 }
 
 .checkmarks li span{
@@ -140,46 +164,70 @@ nav{
     font-size:110%;
 }
 .checkmarks li a{
-    font-size: 110%;
     color:#150b38;
     padding-left:5px;
     font-weight: 400;
 }
+
+.contact-sales-btn .btn{
+    text-decoration: none;
+    border: 1px solid #333333;
+    align-content:center;
+    padding:12px;
+    font-size: 100%;
+    border-radius: 15px;
+    background-color: #103c75;
+    color:#fafafa;
+    transition: 0.3s;
+    border-style: none; 
+}
+
+.contact-sales-btn .btn:hover{
+    background-color:#a0b2e9;
+    transition: 0.3s;
+}
+
 .hero-image{
-    flex:1;
+    flex-basis:50%;
+    margin:0 auto;
 }
 
 .hero-image img{
-    max-width:850px;
-    justify-content: right;
+    margin-top: 5%;
+    max-width:500px;
+    float:right;
 }
 /* HERO CSS ENDS*/
 
 /*PRICING CARDS START*/
-#pricing-cards{
-    width:70%;
-    margin:0 auto;
-    padding-top:200px;
-}
 
-#pricing-cards h1{
-    font-size: 240%;
-    text-align: center;
-    padding-top: 20px;
-    color:#103c75;
+#pricing-cards{
+    width:100%;
+    display:flex;
+    background-color: rgba(234, 238, 245, 0.3);
 }
 
 .container{
     display:flex;
+    width:1200px;
     justify-content: space-between;
     flex-flow: row wrap;
-    gap:10px;
-    height:780px;
+    height:800px;
     align-items: center;
+    margin:0 auto;
+    
+}
+
+#pricing-cards h1{
+    font-size: 200%;
+    text-align: center;
+    color:#103c75;
+    flex-basis:100%;
+
 }
 
 .container .card{
-    width:430px;
+    width:320px;
     height:600px;
     border:1px solid #b4b3e9;
     border-radius: 5px;
@@ -280,9 +328,10 @@ nav{
 /*FOUR CARDS STARTS*/
 
 #four-cards{
-    max-width: 70%;
+    width: 100%;
     margin:0 auto;
-    padding-top:200px;
+    padding-top:150px;
+    display:flex;
 }
 
 #four-cards .four-cards-container{
@@ -291,11 +340,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     row-gap:10px;
+    width:1200px;
+    margin:0 auto;
 }
 
 .four-cards-container .card h1{
-    font-size: 260%;
+    font-size: 200%;
     color:#103c75;
+    flex-basis:50%;
 }
 .four-cards-container .card p{
     padding-top:30px;
@@ -303,15 +355,15 @@ nav{
     color:#150b38;
 }
 .text-card1{
-    flex:2;
+    flex-basis: 50%;
 }
 
 .picture-card1{
-    flex:1;
+    flex-basis:50%;
 }
 
 .picture-card1 img{
-    max-width:900px;
+    max-width:400px;
     float:right;
 }
 
@@ -324,28 +376,32 @@ nav{
 }
 
 .picture-card2 img{
-    max-width:700px;
+    max-width:400px;
 }
 
 
 /* REVIEWS STARTS */
 
 #reviews{
-    width:70%;
-    margin:0 auto;
-    padding-top:200px;
+    display:flex;
+    width:100%;
+    padding-top:150px;
 }
 
 .reviews-container{
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
+    width:1200px;
+    margin:0 auto;
+    padding-left:40px;
+    padding-right:40px;
 }
 
 .reviews-box{
     flex-basis:1;
     background-color: #fcf6f6;
-    width:500px;
+    width:350px;
     height:350px;
 }
 
@@ -375,26 +431,31 @@ nav{
 /* GET-STARTED SECTIONS */
 
 #get-started{
-    width:70%;
-    margin:0 auto;
-    padding-top:200px;
+    display:flex;
+    width:100%;
+    margin-top:200px;
+    background-color:rgb(234, 244, 246);
 }
 
 .get-started-container{
     display:flex;
     justify-content:space-between;
+    align-items: center;
     flex-flow: row wrap;
-    padding:30px;
-    background-color:rgb(234, 244, 246);
+    width:1200px;
+    margin:0 auto;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .get-started-text h1{
-    font-size: 260%;
+    font-size: 150%;
     color:#103c75;
 }
 
 .get-started-text p{
-    padding-top:20px;
     font-size: 120%;
     color:#150b38;
 }
@@ -407,12 +468,13 @@ nav{
     padding: 0.5rem;
     border: 1px solid #333333;
     align-content:center;
-    padding:30px;
-    font-size: 140%;
+    padding:12px;
+    font-size: 100%;
     border-radius: 15px;
     background-color: #103c75;
     color:#fafafa;
     transition: 0.5s;
+    border-style: none;
 }
 
 .get-started-btn .btn:hover{
@@ -423,30 +485,35 @@ nav{
 /*FOOTER STARTS */
 
 footer{
-    width:70%;
-    margin:0 auto;
+    display:flex;
+    width:100%;
+    background-color: #090613;
 }
 
 .footer-container{
     display:flex;
-    background-color: #090613;
+    width:1200px;
     height:300px;
     color:#fafafa;
     gap:20px;
     justify-content: space-between;
+    align-items: center;
     flex-flow: row wrap;
     padding-top:50px;
+    margin:0 auto;
+    padding-left:40px;
+    padding-right:40px;
 }
 
 .footer-col-1{
-    display:flex;
+    display: flex;
     flex-flow:column wrap;
-    max-width: 250px;;
+    max-width: 250px;
 }
 
 .footer-col-2{
-    display:flex;
-    flex-flow:column wrap;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .social-media-links{
@@ -461,3 +528,135 @@ footer{
 .social-media-links a{
     font-size:50px;
 }
+
+.copyright{
+    flex-basis:100%;
+}
+
+.copyright hr{
+    width:100%;
+    margin-top:50px;
+    
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* PAGE PADDING */
+
+nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container{
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+
+
+/* CONTACT CSS */
+#main-contact{
+    height:1220px;
+}
+.contact-section{
+    position:relative;
+    top:100px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.contact-container{
+    max-width: 600px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    background-color: #fff;
+    box-shadow: 0px 6px 116px;
+    padding:40px;
+    box-sizing: border-box;
+    color:#201e1e;
+}
+
+.contact-container h1{
+    color:#103c75;
+    margin-bottom:20px;    
+}
+
+.contact-container .first-paragraph{
+    margin-bottom: 40px;
+    
+}
+
+.contact-container form{
+    width:100%;
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+
+
+.form-group{
+    padding-bottom:25px; 
+    
+    label{
+        display:inline-block;
+        padding-bottom: 5px;
+        
+    }
+
+    p{
+        padding-bottom: 5px;
+    }
+
+    .radio-label{
+        font-size:13px;
+    }
+}
+ 
+.submit-group{
+    text-align: ;
+    
+
+    input[type="submit"]{
+        appearance: none;
+        border:none;
+        outline:none;
+        background: none;
+        padding:10px;
+        border-radius: 10px;
+        background-color: #103c75;
+        color:#fafafa;
+        transition: 0.4s;
+        cursor: pointer;
+        
+        &:hover{
+            background-color:#a0b2e9;
+            transition: 0.4s;
+        }
+    }
+}
+
+.input input{
+    background-color:#ece5e5;
+    display:block;
+    width:100%;
+    border-radius: 10px;
+    appearance: none;
+    outline:none;
+    border:none;
+    padding:8px;
+}
+
+.full textarea{
+    min-height:100px;
+    width:100%;
+    background-color:#ece5e5;
+    border-radius: 10px;
+    resize:none;
+    padding:8px;
+}
+
