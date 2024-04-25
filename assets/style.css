@@ -38,6 +38,7 @@ hr {
     font-size:30px;
     line-height: 1.5;
   }
+  
   p{
     font-size:16px;
     line-height:1.5;
@@ -99,16 +100,13 @@ nav{
 #menu-left a, #menu-right a{
     text-decoration: none;
     color:#201e1e;
+    
 }
 
 #menu-left a:hover, #menu-right a:hover{
     text-decoration: none;
     color:#bcbcd3;
     border-radius: 2px;
-}
-
-#menu-left a, #menu-right a{
-    font-size: 100%;
 }
 
 /*HEADER CSS ENDS*/
@@ -226,7 +224,7 @@ nav{
 
 }
 
-.container .card{
+.container .pricing-card{
     width:320px;
     height:600px;
     border:1px solid #b4b3e9;
@@ -234,14 +232,14 @@ nav{
     transition:0.5s;
 }
 
-.container .card h2{
+.container .pricing-card h2{
     color:#103c75;
     text-align: center;
     margin-top: 40px;
     font-size:160%;
 }
 
-.container .card p{
+.container .pricing-card p{
     color:#201e1e;
     text-align: center;
     padding-top: 10px;
@@ -249,7 +247,7 @@ nav{
     padding-right:60px;
 }
 
-.container .card .save{
+.container .pricing-card .save{
     padding-top:70px;
 }
 
@@ -291,7 +289,7 @@ nav{
     color:rgb(209, 46, 46)
 }
 
-.container .card .price{
+.container .pricing-card .price{
     padding-top:30px;
 }
 
@@ -299,7 +297,7 @@ nav{
     border:2px solid #809cf7;
 }
 
-.container .card:hover{
+.container .pricing-card:hover{
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 1px 1px 10px #8e8dd3;
@@ -493,11 +491,10 @@ footer{
 .footer-container{
     display:flex;
     width:1200px;
-    height:300px;
     color:#fafafa;
     gap:20px;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     flex-flow: row wrap;
     padding-top:50px;
     margin:0 auto;
@@ -507,17 +504,48 @@ footer{
 
 .footer-col-1{
     display: flex;
-    flex-flow:column wrap;
+    flex-flow:row wrap;
     max-width: 250px;
+    gap:20px;
+    
+
+    form{
+        display:block;
+    }
+
+    form .email{
+        margin:15px;
+        margin-left:0;
+        padding:5px;
+        border-radius: 5px;
+        width:100%;
+
+    }
+
+    .checkbox-label{
+        font-size:13px;
+    }
+
+    .submit{
+        margin-top:15px;
+        width:100px;
+        height:20px;
+        border-radius:5px;
+    }
 }
 
 .footer-col-2{
     display: flex;
     flex-flow: column wrap;
+    gap:20px;
 }
 
 .social-media-links{
     gap:10px;
+
+    h2{
+        padding-bottom:20px;
+    }
 }
 
 .footer-container a{
@@ -530,13 +558,16 @@ footer{
 }
 
 .copyright{
-    flex-basis:100%;
+    display:flex;
+    flex-flow:row wrap;
+    flex-basis: 100%;
+    justify-content: center;
 }
 
 .copyright hr{
     width:100%;
-    margin-top:50px;
-    
+    margin-top:20px;
+    color: rgba(255, 255, 255, 0.2)
 }
 
 .copyright p{
@@ -546,12 +577,15 @@ footer{
 
 
 
+
+
 /* PAGE PADDING */
 
-nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container{
+nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container, .wrapper{
     padding-left: 40px;
-    padding-right:40px;
+    padding-right:  40px;
 }
+
 
 
 
@@ -576,7 +610,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     align-items: center;
     flex-flow:row wrap;
     background-color: #fff;
-    box-shadow: 0px 6px 116px;
+    box-shadow: 0px 0px 12px #dfdddd ;
     padding:40px;
     box-sizing: border-box;
     color:#201e1e;
@@ -660,3 +694,70 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     padding:8px;
 }
 
+/* HELP STYLE */
+
+.wrapper {
+    width:800px;
+    margin: 0 auto;
+    display:flex;
+    flex-flow:column wrap;
+    padding-top:150px;
+    padding-bottom:10px;
+  }
+  
+  .wrapper > p,
+  .wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .wrapper > h1 {
+    letter-spacing: 3px;
+    padding-bottom:40px;
+  }
+  
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #f1f7f5;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  .faq.active {
+    border: none;
+  }
+  
