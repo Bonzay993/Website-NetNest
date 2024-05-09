@@ -119,10 +119,11 @@ header{
 
 /*HERO CSS STARTS*/
 #hero{
-    height:700px;
+    height:800px;
     width:100%;
     margin:0 auto;
     display:flex; 
+    align-items: center;
 }
 
 .hero-wrapper{
@@ -134,7 +135,6 @@ header{
     height:500px;
     align-items: center;
     position: relative;
-    top:130px;
 }
 
 .hero-text{
@@ -208,6 +208,7 @@ header{
     background-color: rgba(234, 238, 245, 0.3);
     flex-flow: row wrap;
     padding-bottom:80px;
+    height:800px;
 }
 
 .container{
@@ -215,7 +216,6 @@ header{
     width:1200px;
     justify-content: space-between;
     flex-flow: row wrap;
-    height:600px;
     align-items: center;
     margin:0 auto;
 }
@@ -345,8 +345,9 @@ header{
 #four-cards{
     width: 100%;
     margin:0 auto;
-    padding-top:150px;
     display:flex;
+    height:800px;
+    align-items: center;
 }
 
 #four-cards .four-cards-container{
@@ -367,7 +368,7 @@ header{
 
 .four-cards-container .card p{
     padding-top:30px;
-    font-size: 100%;
+    font-size: 95%;
     color:#150b38;
 }
 
@@ -402,7 +403,9 @@ header{
 #reviews{
     display:flex;
     width:100%;
-    padding-top:150px;
+    background-color: rgba(234, 238, 245, 0.3);
+    height:800px;
+    align-items: center;
 }
 
 .reviews-container{
@@ -420,6 +423,7 @@ header{
     background-color: #fcf6f6;
     width:350px;
     height:350px;
+    box-shadow:1px 1px 20px #dbd3d3;
 }
 
 .reviews-box-content{
@@ -451,7 +455,6 @@ header{
 #get-started{
     display:flex;
     width:100%;
-    margin-top:200px;
     background-color:rgb(234, 244, 246);
 }
 
@@ -651,17 +654,17 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 .contact-container form{
     width:100%;
     box-sizing: border-box;
-    padding-right: 8px;
 }
 
 
 .form-group{
     padding-bottom:25px; 
+    display:flex;
+    flex-flow: row wrap;
     
     label{
         display:inline-block;
         padding-bottom: 5px;
-        
     }
 
     p{
@@ -673,6 +676,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }
 }
  
+/* Styling the Send Message button */
 .submit-group{
     text-align: ;
     
@@ -725,6 +729,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     flex-flow:column wrap;
     padding-top:150px;
     padding-bottom:10px;
+    height:950px;
 }
   
 .wrapper > p,
@@ -734,7 +739,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 }
   
 .wrapper > h1 {
-    letter-spacing: 3px;
     padding-bottom:40px;
     color:#103c75;
 }
@@ -755,9 +759,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     font-weight: bold;
 }
   
-.accordion i {
-    font-size: 1.6rem;
-}
   
 .active,
 .accordion:hover {
@@ -774,7 +775,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 .pannel p {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 100%;
+    font-size: 90%;
     line-height: 1.4;
 }
 
