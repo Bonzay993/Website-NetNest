@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -106,24 +110,27 @@ header{
     text-decoration: none;
     color:#201e1e;
     
+    
 }
 
 #menu-left a:hover, #menu-right a:hover{
-    text-decoration: none;
-    color:#bcbcd3;
+    text-decoration: underline;
     border-radius: 2px;
 }
 
 /*HEADER CSS ENDS*/
 
 
+
+
 /*HERO CSS STARTS*/
 #hero{
-    height:800px;
+    height:100vh;
     width:100%;
     margin:0 auto;
     display:flex; 
     align-items: center;
+    background:linear-gradient(90deg,#c7d1f340 50%, #ffffff 50%);
 }
 
 .hero-wrapper{
@@ -141,11 +148,13 @@ header{
     flex-basis:50%;
     display:flex;
     flex-flow:row wrap;
-    gap:30px;
+    gap:30px;   
 }
+
 .hero-text h1{
     font-size: 280%;
     color:#103c75;
+
 }
 
 .hero-text p{
@@ -164,6 +173,7 @@ header{
     font-weight: bold;
     font-size:110%;
 }
+
 .checkmarks li a{
     color:#150b38;
     padding-left:2px;
@@ -200,6 +210,11 @@ header{
 }
 /* HERO CSS ENDS*/
 
+
+
+
+
+
 /*PRICING CARDS START*/
 
 #pricing-cards{
@@ -208,7 +223,7 @@ header{
     background-color: rgba(234, 238, 245, 0.3);
     flex-flow: row wrap;
     padding-bottom:80px;
-    height:800px;
+    height:900px;
 }
 
 .container{
@@ -225,8 +240,8 @@ header{
     text-align: center;
     color:#103c75;
     flex-basis:100%;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:120px;
+    
 }
 
 .container .pricing-card{
@@ -355,7 +370,7 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    row-gap:10px;
+    row-gap:100px;
     width:1200px;
     margin:0 auto;
 }
@@ -368,7 +383,7 @@ header{
 
 .four-cards-container .card p{
     padding-top:30px;
-    font-size: 95%;
+    font-size: 16px;
     color:#150b38;
 }
 
@@ -391,6 +406,10 @@ header{
 
 .picture-card2{
     flex:1;
+}
+
+.picture-card2-low-res{
+    display:none;
 }
 
 .picture-card2 img{
@@ -578,7 +597,7 @@ footer{
 }
 
 .social-media-links a{
-    font-size:50px;
+    font-size:40px;
 }
 
 .copyright{
@@ -661,9 +680,11 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     padding-bottom:25px; 
     display:flex;
     flex-flow: row wrap;
+    gap:5px;
+    
     
     label{
-        display:inline-block;
+        font-size: 14px;
         padding-bottom: 5px;
     }
 
@@ -675,10 +696,16 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         font-size:13px;
     }
 }
+.radio{
+    display:block;
+   
+    
+    
+}
  
 /* Styling the Send Message button */
 .submit-group{
-    text-align: ;
+    text-align: center;
     
 
     input[type="submit"]{
@@ -728,8 +755,8 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     display:flex;
     flex-flow:column wrap;
     padding-top:150px;
-    padding-bottom:10px;
-    height:950px;
+    padding-bottom:90px;
+    max-height:2000px;
 }
   
 .wrapper > p,
@@ -956,7 +983,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         display: none;
     }
 
-    /* RESIZE THE 3 PRICING CARS */
+    /* RESIZE THE 3 PRICING CARDS */
     #pricing-cards .container h1{
         font-size: 160%;
     }
@@ -988,8 +1015,58 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
        
     }
-}   
+    #four-cards{
+        height:1550px;
         
+        .four-cards-container{
+            flex-basis: 50%;
+            justify-content: center;
+            row-gap: 50px;;
+            
+
+            .picture-card2-high-res{
+                display:none;
+            }
+
+            .picture-card2-low-res{
+                display:block;
+            }
+        
+        }
+    }
+
+    #reviews{
+        height:1300px;
+        .reviews-container{
+            justify-content: center;
+            row-gap:40px;
+        }
+    }
+    
+    #four-cards .four-cards-container{
+        
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+}   
+
+@media screen and (max-width:823px){
+    #pricing-cards{
+        height:1800px;
+    }
+    #pricing-cards .container{
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column;
+        gap:30px;
+        
+    }
+
+
+}
 
 @media screen and (max-width:575px){
 
