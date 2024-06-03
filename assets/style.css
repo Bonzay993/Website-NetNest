@@ -1315,9 +1315,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     .hero-text p{
         font-size: 80%;
     }
-    #pricing-cards {
-        font-size: ;
-    }
+   
 
 }
 
@@ -1502,36 +1500,34 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         padding:12px;
         
             
-            .footer-col-1{
-                h2{
-                    font-size: 120%;
-                }
-
-                form label{
-                    font-size: 80%;
-                }
-
-                .checkbox-label{
-                    font-size: 60%;
-                }
+        .footer-col-1{
+            h2{
+                font-size: 120%;
             }
 
-            .footer-col-2{
-                a{
-                    font-size: 80%;
-                }
+            form label{
+                font-size: 80%;
             }
 
-            .social-media-links{
-                h2{
-                    font-size: 100%;
-                }
-
-                a{
-                    font-size:120%
-                }
+            .checkbox-label{
+                font-size: 60%;
             }
-    }
-    
+        }
+
+        .footer-col-2{
+            a{
+                font-size: 80%;
+            }
+        }
+
+        .social-media-links{
+            h2{
+                font-size: 100%;
+            }
+
+            a{
+                font-size:120%
+            }
+        }
+    } 
 }
-       
