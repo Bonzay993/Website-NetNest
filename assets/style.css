@@ -279,7 +279,7 @@ header{
     display:flex;
     background-color: rgba(234, 238, 245, 0.3);
     flex-flow: row wrap;
-    padding-bottom:0px;
+    padding-bottom:60px;
     height:1000px;
     
 }
@@ -410,6 +410,7 @@ header{
 .pricing-cards-btn{
     flex-basis:100%;
     text-align: center;
+    
 }
 /*PRICING CARDS END*/
 
@@ -1130,6 +1131,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         flex-direction: column;
         transition: transform 0.5s ease-in-out;
         text-align: center;
+       
     }
     
     .menu-hamburger .menu-items li {
@@ -1296,13 +1298,13 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 @media screen and (max-width:575px){
 
     .hero-wrapper{
-        width:100%;
+        
         padding-left:20px;
         padding-right: 20px;
     }
 
     .hero-image img{
-        width:350px;
+        width:340px;
     }
     
     .hero-text{
@@ -1323,6 +1325,85 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 
 
+
+
+
+/* 450pixels and less ex: PIXEL 7*/ 
+@media screen and (max-width:450px){
+   
+   
+
+   .hero-wrapper{
+        padding-right:0;
+        padding-left:0;
+   }
+
+   .hero-text{
+        padding-right: 0;
+   }
+
+   #pricing-cards{
+        padding-bottom:50px;  
+        padding-top:40px; 
+        
+        h1{
+            padding-bottom:40px;
+        }
+
+        .container{
+            gap:50px;
+        }
+   }
+
+   
+   .container .pricing-card{
+        width:230px;
+        height:480px;
+   }
+
+   .contact-sales-btn{
+    align-content: center;
+}
+
+   
+
+   #four-cards{
+        justify-content: center;
+        padding-top:40px;
+        
+       
+        
+
+        .four-cards-container{
+            margin:0;
+            padding-right:0px;
+            padding-left:0px;
+            width:360px;
+            align-content: center;
+            text-align: left;
+            
+       }
+   
+   }
+
+    .reviews-box{
+        width:280px;
+   }
+
+   #get-started{
+        height:200px;
+   }
+
+   #faq .wrapper{
+        max-height:3000px;
+   }
+   
+   .contact-container{
+        padding:15px;
+   }
+  
+
+}
 
 
 
@@ -1531,3 +1612,26 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         }
     } 
 }
+
+
+
+
+
+
+
+
+
+/* 320pixels and less*/
+
+@media screen and (max-width:320px){
+    main {
+        overflow-x: hidden;
+        margin:0 auto;
+    }
+
+    .hero-wrapper, nav{
+        padding-left:5px;
+        padding-right:5px;
+    }
+}
+   
