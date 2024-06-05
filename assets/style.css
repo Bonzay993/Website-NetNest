@@ -1344,7 +1344,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
    #pricing-cards{
         padding-bottom:50px;  
-        padding-top:40px; 
+        padding-top:60px; 
         
         h1{
             padding-bottom:40px;
@@ -1412,16 +1412,20 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 
 
-/* 400pixels and less*/
+/* 375ixels and less*/
 
-@media screen and (max-width:400px){
+@media screen and (max-width:375px){
     .contact-sales-btn .btn{
         padding:8px;
         font-size: 80%;
     }
-
+    #hero{
+        height:940px;
+        
+    }
+    
     .hero-image img{
-        max-width: 300px;
+        max-width: 360px;
     }
 
     .hero-text{
@@ -1621,7 +1625,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 
 
-/* 320pixels and less*/
+/* 320pixels and less / Iphone5 /SE*/
 
 @media screen and (max-width:320px){
     main {
@@ -1630,8 +1634,11 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }
 
     .hero-wrapper, nav{
-        padding-left:5px;
-        padding-right:5px;
+        width:100%;
+    }
+
+    .hero-image img{
+        width:300px;
     }
 }
    
