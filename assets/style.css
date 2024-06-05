@@ -989,9 +989,16 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         gap:40px;
         .reviews-box{
             width:250px;
-            height:320px;
+            height:360px;
         }
-        
+
+        .reviews-box-content{
+            
+            height:90%;
+            padding:10px;
+            
+        }
+    }    
         
 }
 
