@@ -1636,5 +1636,9 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     .hero-wrapper, nav{
         width:100%;
     }
+
+    .hero-image img{
+        width:300px;
+    }
 }
    
