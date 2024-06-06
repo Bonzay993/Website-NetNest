@@ -394,11 +394,23 @@ header{
 }
 
 .card-checkmarks{
+    display:block;
+    text-align: left;
+    position: relative;
+    left:20%;
+    width:60%;
     list-style-type: none;
     text-decoration: none;
     padding-top:30px;
     margin-bottom: 40px;
     font-size: 85%;
+    
+    
+    li span{
+        color:rgb(19, 194, 19);
+        font-weight: 600;
+    }
+    
     
 }
 
