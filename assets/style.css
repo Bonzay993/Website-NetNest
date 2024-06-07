@@ -1255,7 +1255,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }
 
     #reviews{
-        height:950px;
+        height:820px;
         .reviews-container{
             justify-content: center;
             row-gap:40px;
