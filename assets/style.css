@@ -88,7 +88,7 @@ header{
 .logo{
     text-decoration: none;
     color:#103c75;
-    font-size:100%;
+    font-size:110%;
     padding-right: 15px;
 }
 
@@ -109,17 +109,41 @@ header{
     flex:2;
     justify-content: left;
     list-style-type: none;
+    display:flex;
+    gap:20px;
+    padding-left: 15px;
+    
 }
 
 #menu-left li, #menu-right li{
     float:left;
-    padding:15px;
+    align-content: center;
 }
 
 #menu-right{
     justify-content: right;
     list-style-type: none;
-    
+    display:flex;
+    gap:20px;
+    .contact-sales{
+        background-color: #fafafa;
+        border: 1px solid rgb(16, 60, 117);
+        border-radius: 28px;
+        padding:15px 10px 15px 10px;
+        transition: 0.3s;
+        a{
+            color:#103c75;
+        }
+        
+    }
+
+    .contact-sales:hover{
+        background-color: #103c75;
+        transition: 0.3s;
+        a{
+            color:#fafafa;
+        }
+    }
 }
 
 .home{
@@ -129,6 +153,7 @@ header{
 #menu-left a, #menu-right a{
     text-decoration: none;
     color:#0c0c0c;
+    font-size: 92%;
     
 }
 
@@ -144,6 +169,11 @@ header{
 #menu-left a:hover:after, #menu-right a:hover:after{
     width:100%;
 }
+
+#menu-right .contact-sales a:after{
+    display:none;
+}
+
 
 
 
@@ -229,8 +259,8 @@ header{
     border: 1px solid rgb(16, 60, 117);
     align-content:center;
     padding:12px;
-    font-size: 100%;
-    border-radius: 15px;
+    font-size: 90%;
+    border-radius: 22px;
     background-color: rgb(16, 60, 117);
     color:#fafafa;
     transition: 0.3s;
@@ -633,8 +663,8 @@ header{
     border: 1px solid #333333;
     align-content:center;
     padding:12px;
-    font-size: 100%;
-    border-radius: 15px;
+    font-size: 90%;
+    border-radius: 24px;
     background-color: #103c75;
     color:#fafafa;
     transition: 0.5s;
@@ -924,6 +954,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     flex-flow:column wrap;
     padding-top:150px;
     padding-bottom:90px;
+    min-height:860px;
     max-height:2000px;
 }
   
@@ -979,6 +1010,10 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 }
 .faq.active {
     border: none;
+}
+
+.faq-last{
+    margin-bottom:110px;
 }
 
 
