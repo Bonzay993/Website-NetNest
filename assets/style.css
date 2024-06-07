@@ -324,6 +324,22 @@ header{
     
 }
 
+.container .card2{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border:3px solid hsl(241, 69%, 67%);
+}
+
+.best-deal{
+    background-color:hsl(241, 69%, 67%);
+    color:#f1f7f5 !important;
+    margin-top: 0 !important;
+    align-content:center;
+    height:40px;
+    font-size: 100% !important;
+}
+
 .container .pricing-card p{
     color:#201e1e;
     text-align: center;
@@ -774,12 +790,12 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 /* CONTACT CSS */
 #main-contact{
-    height:1220px;
+    height:1360px;
 }
 
 .contact-section{
     position:relative;
-    top:100px;
+    top:160px;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:40px;
@@ -1239,7 +1255,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }
 
     #reviews{
-        height:950px;
+        height:820px;
         .reviews-container{
             justify-content: center;
             row-gap:40px;
@@ -1364,6 +1380,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
    #pricing-cards{
         padding-bottom:50px;  
         padding-top:60px; 
+        height:1920px;
         
         h1{
             padding-bottom:40px;
@@ -1377,7 +1394,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
    
    .container .pricing-card{
         width:230px;
-        height:480px;
+        height:550px;
    }
 
    .contact-sales-btn{
@@ -1403,6 +1420,10 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
             
        }
    
+   }
+
+   #reviews{
+    height:1400px;
    }
 
     .reviews-box{
