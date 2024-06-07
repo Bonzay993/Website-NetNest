@@ -924,6 +924,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     flex-flow:column wrap;
     padding-top:150px;
     padding-bottom:90px;
+    min-height:860px;
     max-height:2000px;
 }
   
@@ -979,6 +980,10 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 }
 .faq.active {
     border: none;
+}
+
+.faq-last{
+    margin-bottom:110px;
 }
 
 
