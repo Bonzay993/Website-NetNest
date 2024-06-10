@@ -292,7 +292,6 @@ header{
     text-align: center;
     margin-top: 40px;
     font-size:160%;
-    
 }
 
 .card2{
@@ -304,11 +303,11 @@ header{
 
 .best-deal{
     background-color:hsl(241, 69%, 67%);
-    color:#f1f7f5 !important;
-    margin-top: 0 !important;
+    color:#f1f7f5;
+    margin-top: 0;
     align-content:center;
     height:40px;
-    font-size: 100% !important;
+    font-size: 100%;
 }
 
 .pricing-card-paragraph{
@@ -1127,7 +1126,7 @@ footer{
     }
 }
 
-/* 823 pixels and less */
+/* IPAD MINI 823 pixels and less */ 
 @media screen and (max-width:823px){
     
     .hero-image-img{
@@ -1135,14 +1134,31 @@ footer{
     }
 
     #pricing-cards{
-        height:1800px;
+        height:1900px;
     }
 
     .pricing-cards-container{
         justify-content: space-between;
         align-items: center;
         flex-flow: column;
-        gap:30px;
+        gap:50px;
+    }
+
+    .pricing-cards-btn{
+        align-content:center;
+    }
+
+    #reviews{
+        height:1000px;
+    }
+}
+
+/* Make the hover effect work at min 823px*/
+@media screen and (min-width:823px){
+    .pricing-card:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 1px 1px 10px #8e8dd3;
     }
 }
 
@@ -1175,14 +1191,18 @@ footer{
     .hero-paragraph{
         font-size: 80%;
     }
-}
 
-/* Make the hover effect work at min 450px*/
-@media screen and (min-width:450px){
-    .pricing-card:hover{
-        transform: scale(1.1);
-        transition: 0.5s;
-        box-shadow: 1px 1px 10px #8e8dd3;
+    #reviews{
+        height:1400px;
+    }
+
+    .reviews-container{
+        gap:50px;
+    }
+    
+    .main-page-padding{
+        padding-left:20px;
+        padding-right: 20px;
     }
 }
 
@@ -1190,9 +1210,6 @@ footer{
 @media screen and (max-width:450px){
 
     
-    .main-page-padding{
-        padding:0px;
-    }
    
     .hero-wrapper{
         padding-right:0;
@@ -1206,7 +1223,7 @@ footer{
 
     #pricing-cards{
         padding-bottom:5px;  
-        height:1860px;
+        height:1950px;
     }  
         
     .pricing-cards-heading{
@@ -1217,10 +1234,6 @@ footer{
     .pricing-cards-container{
         gap:50px;
         justify-content: center;
-    }
-
-    .pricing-cards-btn{
-        padding-top: 20px;    
     }
 
     .pricing-card{
@@ -1278,9 +1291,11 @@ footer{
 
 }
 
-/* 375ixels and less*/
+/* 375 pixels and less*/
 
 @media screen and (max-width:375px){
+    
+    
     .page-contact-sales-btn{
         padding:8px;
         font-size: 80%;
@@ -1291,29 +1306,51 @@ footer{
     }
     
     .hero-image-img{
-        width: 360px;
+        width: 340px;
     }
 
     .hero-text{
         padding-right:0;
     }
+    
     #pricing-cards{
         align-items: center;
-    }
-    .pricing-cards-heading{
-        font-size:150% ;
-        padding-top: 0;
-        align-content: center;
+        height:1900px;
     }
 
-    nav{
-        padding-left: 10px;
+    .pricing-card{
+        width:200px;
+        height:450px; 
     }
-      
+
+    .pricing-cards-btn{
+        padding-bottom:40px;
+    }
+
+    .card2{
+        height:520px;
+        justify-content: space-between;
+    }
+
+    .best-deal{
+        margin-bottom: 20px;
+    }
+
+    .pricing-card-heading{
+        font-size:120% ;
+        text-align: center;
+        margin-top:0px;
+    }
+
+    .card2-checkmarks{
+        padding-bottom: 30px;
+    }
+
     .logo{
         font-size: 85%;
         width:0px;
     }
+
     .menu-hamburger  .menu-items{
         width:110px;
     }
@@ -1349,13 +1386,9 @@ footer{
         align-items: center;
     }
 
-    .pricing-card{
-        width:200px;
-        height:500px;
-    }
-
     .card-checkmarks{
         font-size: 80%;
+        margin:0;
     }
 
     #four-cards{
