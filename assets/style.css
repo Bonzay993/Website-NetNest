@@ -1189,10 +1189,7 @@ footer{
 /* 450pixels and less ex: PIXEL 7*/ 
 @media screen and (max-width:450px){
 
-    .main-navigation{
-        justify-content: right;
-    }
-
+    
     .main-page-padding{
         padding:0px;
     }
