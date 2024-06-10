@@ -1209,7 +1209,9 @@ footer{
 /* 450pixels and less ex: PIXEL 7*/ 
 @media screen and (max-width:450px){
 
-    
+    .logo{
+        padding-left: 8px;
+    }
    
     .hero-wrapper{
         padding-right:0;
