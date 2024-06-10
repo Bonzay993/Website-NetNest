@@ -1127,7 +1127,7 @@ footer{
     }
 }
 
-/* 823 pixels and less */
+/* IPAD MINI 823 pixels and less */ 
 @media screen and (max-width:823px){
     
     .hero-image-img{
@@ -1135,14 +1135,18 @@ footer{
     }
 
     #pricing-cards{
-        height:1800px;
+        height:1900px;
     }
 
     .pricing-cards-container{
         justify-content: space-between;
         align-items: center;
         flex-flow: column;
-        gap:30px;
+        gap:50px;
+    }
+
+    .pricing-cards-btn{
+        align-content:center;
     }
 }
 
@@ -1190,9 +1194,6 @@ footer{
 @media screen and (max-width:450px){
 
     
-    .main-page-padding{
-        padding:0px;
-    }
    
     .hero-wrapper{
         padding-right:0;
@@ -1281,6 +1282,8 @@ footer{
 /* 375ixels and less*/
 
 @media screen and (max-width:375px){
+    
+    
     .page-contact-sales-btn{
         padding:8px;
         font-size: 80%;
@@ -1291,7 +1294,7 @@ footer{
     }
     
     .hero-image-img{
-        width: 360px;
+        width: 340px;
     }
 
     .hero-text{
@@ -1299,7 +1302,11 @@ footer{
     }
     #pricing-cards{
         align-items: center;
+        height:2000px;
     }
+
+    
+    
     .pricing-cards-heading{
         font-size:150% ;
         padding-top: 0;
@@ -1351,7 +1358,7 @@ footer{
 
     .pricing-card{
         width:200px;
-        height:500px;
+        height:540px;
     }
 
     .card-checkmarks{
