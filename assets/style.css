@@ -1291,7 +1291,7 @@ footer{
 
 }
 
-/* 375ixels and less*/
+/* 375 pixels and less*/
 
 @media screen and (max-width:375px){
     
@@ -1315,13 +1315,16 @@ footer{
     
     #pricing-cards{
         align-items: center;
-        height:1800px;
+        height:1900px;
     }
 
     .pricing-card{
         width:200px;
         height:450px; 
-        
+    }
+
+    .pricing-cards-btn{
+        padding-bottom:40px;
     }
 
     .card2{
