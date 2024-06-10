@@ -15,32 +15,31 @@
 </head>
 <body>
     <header class="prevent-select">
-        <nav id="main-navigation">
+        <nav class="main-navigation">
             <a href="index.html" class="logo">
                 <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg> NetNest</h2>
             </a>
-            <ul id="menu-left">
-                <li>
-                    <a class="home" href="./index.html">Home</a>
+            <ul class="menu-left menu-hidden">
+                <li class="menu-left-element">
+                    <a class="home menu-anchor" href="./index.html">Home</a>
                 </li>
-                <li>
-                    <a href="./index.html#reviews">Reviews</a>
+                <li class="menu-left-element">
+                    <a class="menu-anchor" href="./index.html#reviews">Reviews</a>
                 </li>
-                <li>
-                    <a href="./index.html#pricing-cards">Pricing</a>
+                <li class="menu-left-element">
+                    <a class="menu-anchor" href="./index.html#pricing-cards">Pricing</a>
                 </li>
             </ul>
-            <ul id="menu-right">
-                <li>
-                    <a href="./help.html">Help</a>
+            <ul class="menu-right menu-hidden">
+                <li class="menu-right-element">
+                    <a class="menu-anchor" href="./help.html">Help</a>
                 </li>
-                <li class="contact-sales">
-                    <a href="./contact.html">Contact Sales</a>
+                <li class="menu-right-element contact-sales">
+                    <a class="menu-anchor contact-sales-anchor" href="./contact.html">Contact Sales</a>
                 </li>
             </ul>
         </nav>
         <div class="menu-hamburger hamburger-container">
-                
             <input class="checkbox" type="checkbox" name="" id="" />
             <div class="hamburger-lines">
                 <span class="bar bar1"></span>
@@ -57,34 +56,35 @@
             </div>
         </div> 
     </header>
+    
     <main id="main-contact">
         <section class="contact-section">
             <div class="contact-container">
-                <h1>Contact the team!</h1>
+                <h1 class="contact-container-heading">Contact the team!</h1>
                 <p class="first-paragraph">Fill out the form below to get in touch with one of our team members. We will try to get back to you within 48 hours. If we do not reply within that time please feel free to use the form again.</p>
-                <form>
+                <form class="contact-form">
                     <div class="form-group input">
-                        <label for="firstname">First name*</label>
+                        <label class="form-group-label" for="firstname">First name*</label>
                         <input type="text" name="firstname" id="firstname" required class="form-element" placeholder="John"/>
                     </div>
                     <div class="form-group input">
-                        <label for="lastname">Last name*</label>
+                        <label class="form-group-label" for="lastname">Last name*</label>
                         <input type="text" name="lastname" id="lastname" required class="form-element" placeholder="Doe"/>
                     </div>
                     <div class="form-group input">
-                        <label for="email">Email address*</label>
+                        <label class="form-group-label" for="email">Email address*</label>
                         <input type="email" name="email" id="email" required class="form-element" placeholder="John.doe@example.com"/>
                     </div>
                     <div class="form-group input">
-                        <label for="telephone">Phone Number*</label>
+                        <label class="form-group-label" for="telephone">Phone Number*</label>
                         <input type="tel" name="telephone" id="telephone" required class="form-element" placeholder="+44 0123 456789"/>
                     </div>
                     <div class="form-group input">
-                        <label for="company">Company</label>
+                        <label class="form-group-label" for="company">Company</label>
                         <input type="text" name="company" id="company" class="form-element" placeholder="John.doe@example.com"/>
                     </div>
                     <div class="form-group radio">
-                        <p>Choose Package:</p>
+                        <p class="form-group-paragraph">Choose Package:</p>
                         <div class="form-group-radio1">
                             <input type="radio" name="radio-button" id="premium" class="form-element">
                             <label class="radio-label" for="premium">Premium</label>
@@ -113,30 +113,30 @@
         <div class="footer-container prevent-select">
              <div class="footer-col-1">
                  <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
-                 <form>
+                 <form class="footer-form">
                      <label for="email">Subscribe to NetNest Communications</label>
-                     <input type="email" id="email" name="email" class="email"><br>
+                     <input type="email" id="email" name="email" class="email footer-email"><br>
                      <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">
                      <label for="checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label><br>
                      <input type="submit" value="Submit" class="submit">
                  </form>
              </div>
              <div class="footer-col-2">
-                <a href="./contact.html">Contact</a>
-                <a href="#pricing-cards">Pricing</a>
-                <a href="#reviews">Reviews</a>
-                <a href="./help.html">Help</a>
+                 <a class="footer-anchor" href="./contact.html">Contact</a>
+                 <a class="footer-anchor" href="#pricing-cards">Pricing</a>
+                 <a class="footer-anchor" href="#reviews">Reviews</a>
+                 <a class="footer-anchor" href="./help.html">Help</a>
              </div>
              <div class="social-media-links">
-                 <h2>FOLLOW US</h2>
-                 <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                 <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                 <a href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
-                 <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                 <h2 class="social-media-heading">FOLLOW US</h2>
+                 <a class="footer-anchor social-media-anchor" href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                 <a class="footer-anchor social-media-anchor" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                 <a class="footer-anchor social-media-anchor" href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
+                 <a class="footer-anchor social-media-anchor" href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
              </div>
              <div class="copyright">
-                 <hr>
-                 <p>@2024 NetNest</p>
+                 <hr class="break-line">
+                 <p class="copyright-paragraph">@2024 NetNest</p>
              </div>
         </div>
      </footer>
