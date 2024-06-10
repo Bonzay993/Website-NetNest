@@ -14,7 +14,7 @@ html{
 body{
     font-family: Roboto;
     color:#777777;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.25px;
 }    
 
 hr { 
@@ -132,13 +132,13 @@ header{
     font-weight: bold;
 }
 
-.menu-left-anchor, .menu-right-anchor{
+.menu-anchor{
     text-decoration: none;
     color:#0c0c0c;
     font-size: 92%;
 }
 
-.menu-left-anchor:after, .menu-right-anchor:after{
+.menu-anchor:after{
     transition: all ease-in-out .3s;
     border-bottom: 3px solid rgb(16, 60, 117);
     width:0;
@@ -146,7 +146,7 @@ header{
     content: "";
 }
 
-.menu-left-anchor:hover:after, .menu-right-anchor:hover:after{
+.menu-anchor:hover:after{
     width:100%;
 }
 
@@ -242,7 +242,7 @@ header{
     margin:0 auto;
 }
 
-.hero-image img{
+.hero-image-img{
     margin-top: 5%;
     max-width:500px;
     float:right;
@@ -361,12 +361,6 @@ header{
 
 .card2{
     border:2px solid #809cf7;
-}
-
-.pricing-card:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 10px #8e8dd3;
 }
 
 .card-thematic-break{
@@ -596,7 +590,7 @@ footer{
     display:block;
 }
 
-form .email{
+.footer-email{
     margin:15px;
     margin-left:0;
     padding:5px;
@@ -658,15 +652,12 @@ form .email{
     text-align: center;
     font-size: 12px;
     padding-bottom:10px;
-    
 }
 
-
 /* PAGE PADDING */
-
-nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container, .wrapper{
+.main-page-padding{
     padding-left: 40px;
-    padding-right:  40px;
+    padding-right: 40px;
 }
 
 /* CONTACT CSS */
@@ -703,8 +694,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 }
 
 .first-paragraph{
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;    
 }
 
 .contact-form{
@@ -735,7 +725,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
 
 .radio{
     display:block;
-   
 }
  
 /* Styling the Send Message button */
@@ -893,7 +882,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         font-size:100%;
     }
 
-    .hero-image img{
+    .hero-image-img{
         max-width: 440px;
     }
     
@@ -914,18 +903,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         
 }
 
-
-
-
-
-
-
-
-
-
 /* 976 pixels and less */
-
-
 @media screen and (max-width:976px){
 
     .hero-wrapper{
@@ -950,11 +928,11 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         text-align: center;
     }
 
-    .menu-left, .menu-right{
-        display:none;
+    .menu-hidden{
+        display:none; /*hiding the navbar menu*/
     }
 
-    .hero-image img{
+    .hero-image-img{
         max-width: 480px;
     }
   
@@ -1081,119 +1059,92 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         display: none;
     }
 
-/* RESIZE THE 3 PRICING CARDS */
-/* #pricing-cards .container h1{
-    font-size: 160%;
-}
-*/
-#pricing-cards{
-    height:800px;
-}
+    /* RESIZE THE 3 PRICING CARDS */
+    #pricing-cards{
+        height:800px;
+    }
 
-.pricing-cards-heading{
-    padding-top:0;
-    align-content: center;
-}
-    
-.pricing-card {
-    width:240px;
-} 
+    .pricing-cards-heading{
+        padding-top:0;
+        align-content: center;
+    }
+        
+    .pricing-card {
+        width:240px;
+    } 
 
-.pricing-card-heading{
-    font-size: 120%;
-}
+    .pricing-card-heading{
+        font-size: 120%;
+    }
 
-.pricing-card-paragraph{
-    font-size:80%;
-}
+    .pricing-card-paragraph{
+        font-size:80%;
+    }
 
-.save-percentage{
-    padding:7px;
-    font-size: 90%;
-}
+    .save-percentage{
+        padding:7px;
+        font-size: 90%;
+    }
 
-.final-price{
-    font-size:240%;
-}
+    .final-price{
+        font-size:240%;
+    }
 
-#four-cards{
-    height:1550px;
-}
+    #four-cards{
+        height:1550px;
+    }
 
-.four-cards-container{
-    flex-basis: 50%;
-    justify-content: center;
-    row-gap: 50px;;
-}   
+    .four-cards-container{
+        flex-basis: 50%;
+        justify-content: center;
+        row-gap: 50px;
+    }   
 
-.second-picture-card-high-res{
-    display:none;
-}
+    .second-picture-card-high-res{
+        display:none;
+    }
 
-.second-picture-card-low-res{
-    display:block;
-}
-
-
+    .second-picture-card-low-res{
+        display:block;
+    }
 
     #reviews{
         height:820px;
-        .reviews-container{
-            justify-content: center;
-            row-gap:40px;
-        }
+    }
+    .reviews-container{
+        justify-content: center;
+        row-gap:40px;
+    }
 
-        .reviews-box-content{
-            padding:14px;
-        }
+    .reviews-box-content{
+        padding:14px;
     }
     
-    #four-cards .four-cards-container{
-        
+    .four-cards-container{
         flex-flow: column wrap;
         justify-content: space-between;
         align-items: center;
-        
-        
     }
-}   
-
-
-
-
-
-
-
-
-
-
+}
 
 /* 823 pixels and less */
-
 @media screen and (max-width:823px){
     
-    .hero-image img{
+    .hero-image-img{
         width:400px;
     }
 
     #pricing-cards{
         height:1800px;
     }
-    #pricing-cards .container{
+
+    .pricing-cards-container{
         justify-content: space-between;
         align-items: center;
         flex-flow: column;
         gap:30px;
-        
     }
-
-
 }
-
-
-
-
-
 
 /* 637 pixels and less due to reviews box */ 
 @media screen and (max-width:637px){
@@ -1202,55 +1153,54 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }  
 }
     
-
-
-
-
-
-
-
-
 /* 575 pixels and less */
-
 @media screen and (max-width:575px){
 
     .hero-wrapper{
-        
         padding-left:20px;
         padding-right: 20px;
     }
 
-    .hero-image img{
+    .hero-image-img{
         width:340px;
     }
     
     .hero-text{
         padding-right: 20px;
     }
-    .hero-text h1{
+    .hero-heading{
         font-size: 200%;
     }
 
-    .hero-text p{
+    .hero-paragraph{
         font-size: 80%;
     }
-   
-
 }
 
-
-
-
-
-
-
+/* Make the hover effect work at min 450px*/
+@media screen and (min-width:450px){
+    .pricing-card:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 1px 1px 10px #8e8dd3;
+    }
+}
 
 /* 450pixels and less ex: PIXEL 7*/ 
 @media screen and (max-width:450px){
+
+    .main-navigation{
+        justify-content: right;
+    }
+
+    .main-page-padding{
+        padding:0px;
+    }
    
     .hero-wrapper{
         padding-right:0;
         padding-left:0;
+        width:90%;
     }
 
     .hero-text{
@@ -1258,12 +1208,13 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     }
 
     #pricing-cards{
-        padding-bottom:50px;  
-        height:2020px;
+        padding-bottom:5px;  
+        height:1860px;
     }  
         
     .pricing-cards-heading{
-        padding-bottom:20px;
+        padding-bottom:50px;
+        padding-top:50px;
     }
 
     .pricing-cards-container{
@@ -1271,36 +1222,45 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         justify-content: center;
     }
 
+    .pricing-cards-btn{
+        padding-top: 20px;    
+    }
+
     .pricing-card{
         width:250px;
         height:520px;
+        box-shadow: 1px 1px 10px #8e8dd3;
     }
 
     .contact-sales{
         align-content: center;
     }
 
-   
-
     #four-cards{
         justify-content: center;
-        padding-top:40px;
-        
+        height:1400px;
     } 
         
-
     .four-cards-container{
-        margin:0;
-        padding-right:0px;
-        padding-left:0px;
-        width:360px;
         align-content: center;
         text-align: left;
-        
     }
    
+    .card-heading{
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .card-paragraph{
+        font-size: 95%;
+    }
+
+    .picture-cards-img{
+        width:350px;
+    }
+
    #reviews{
-    height:1400px;
+        height:1400px;
    }
 
     .reviews-box{
@@ -1318,16 +1278,8 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
    .contact-container{
         padding:15px;
    }
-  
 
 }
-
-
-
-
-
-
-
 
 /* 375ixels and less*/
 
@@ -1336,13 +1288,13 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         padding:8px;
         font-size: 80%;
     }
+   
     #hero{
         height:940px;
-        
     }
     
-    .hero-image img{
-        max-width: 360px;
+    .hero-image-img{
+        width: 360px;
     }
 
     .hero-text{
@@ -1377,8 +1329,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         right:-1px;
         top:31px;
         height:20px;
-        
-        
     }
     
     .menu-hamburger .checkbox{
@@ -1415,9 +1365,8 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         height:1300px;
         justify-content: center;
         text-align: center;
-
     } 
-        
+
     .picture-cards-img{
         width: 280px;
     }
@@ -1442,8 +1391,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         font-size: 80%;
     }
         
-    
-
     #main-contact{
         height:1200px;
         
@@ -1525,14 +1472,6 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
     } 
 }
 
-
-
-
-
-
-
-
-
 /* 320pixels and less / Iphone5 /SE*/
 
 @media screen and (max-width:320px){
@@ -1545,7 +1484,7 @@ nav, .hero-wrapper, #pricing-cards .container, #four-cards .four-cards-container
         width:100%;
     }
 
-    .hero-image img{
+    .hero-image-img{
         width:300px;
     }
 }
