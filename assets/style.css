@@ -659,6 +659,11 @@ footer{
     padding-right: 40px;
 }
 
+.help-page-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* CONTACT CSS */
 #main-contact{
     height:1360px;
@@ -773,15 +778,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* HELP STYLE */
 
 .wrapper {
@@ -854,23 +850,8 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
-
-
-
-
 /* 1200 pixels and less*/
-
 
 @media screen and (max-width:1200px) {
     .hero-heading{
@@ -1210,7 +1191,7 @@ footer{
 @media screen and (max-width:450px){
 
     .logo{
-        padding-left: 8px;
+        padding-left: 10px;
     }
    
     .hero-wrapper{
@@ -1283,7 +1264,7 @@ footer{
         height:200px;
    }
 
-   #faq .wrapper{
+   .wrapper{
         max-height:3000px;
    }
    
