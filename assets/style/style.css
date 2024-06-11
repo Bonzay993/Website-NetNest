@@ -106,19 +106,16 @@ header{
     gap:20px;
 }
 
-.contact-sales{
+.contact-sales-anchor{
     background-color: #fafafa;
     border: 1px solid rgb(16, 60, 117);
     border-radius: 28px;
     padding:15px 10px 15px 10px;
     transition: 0.3s;
-}
-
-.contact-sales-anchor{
     color:#103c75;
 }
-    
-.contact-sales:hover{
+
+.contact-sales-anchor:hover{
     background-color: #103c75;
     transition: 0.3s;
     
@@ -513,17 +510,6 @@ header{
     font-size: 110%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* GET-STARTED SECTIONS */
 
 #get-started{
@@ -659,6 +645,11 @@ footer{
     padding-right: 40px;
 }
 
+.help-page-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* CONTACT CSS */
 #main-contact{
     height:1360px;
@@ -725,7 +716,51 @@ footer{
 .radio{
     display:block;
 }
- 
+/* Form Action CSS*/
+#form-action{
+    height:800px;
+}
+
+.form-action-section{
+    position:relative;
+    top:30%;
+}
+
+.form-action-heading{
+    text-align: center;
+    flex-basis: 100%;
+    color:#103c75;
+}
+
+.form-action-paragraph{
+    color:#201e1e;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.form-action-container{
+    display:flex;
+    flex-flow:row wrap;
+    width:500px;
+    height:250px;
+    box-shadow: 0px 0px 12px #dfdddd ;
+    margin:0 auto;
+    justify-content: space-between;
+    
+}
+
+.form-action-close-btn{
+   margin-left: auto;
+   font-size: 150%;
+   padding:10px 10px 0px 0px;
+   height:10%;
+   color:#090613;
+}
+
+.form-action-close-btn:hover{
+   color:#777777;
+}
+
 /* Styling the Send Message button */
 .submit-group{
     text-align: center;
@@ -771,16 +806,6 @@ footer{
     resize:none;
     padding:8px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* HELP STYLE */
 
@@ -854,23 +879,8 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
-
-
-
-
 /* 1200 pixels and less*/
-
 
 @media screen and (max-width:1200px) {
     .hero-heading{
@@ -1209,7 +1219,9 @@ footer{
 /* 450pixels and less ex: PIXEL 7*/ 
 @media screen and (max-width:450px){
 
-    
+    .logo{
+        padding-left: 10px;
+    }
    
     .hero-wrapper{
         padding-right:0;
@@ -1281,7 +1293,7 @@ footer{
         height:200px;
    }
 
-   #faq .wrapper{
+   .wrapper{
         max-height:3000px;
    }
    
