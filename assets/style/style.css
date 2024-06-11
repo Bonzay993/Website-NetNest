@@ -106,19 +106,16 @@ header{
     gap:20px;
 }
 
-.contact-sales{
+.contact-sales-anchor{
     background-color: #fafafa;
     border: 1px solid rgb(16, 60, 117);
     border-radius: 28px;
     padding:15px 10px 15px 10px;
     transition: 0.3s;
-}
-
-.contact-sales-anchor{
     color:#103c75;
 }
-    
-.contact-sales:hover{
+
+.contact-sales-anchor:hover{
     background-color: #103c75;
     transition: 0.3s;
     
