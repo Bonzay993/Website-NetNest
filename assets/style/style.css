@@ -38,13 +38,12 @@ hr {
     line-height: 1.5;
   }
   
-  p{
+    p{
     font-size:14px;
     line-height:1.5;
-  }
+    }
 
 /*HEADER CSS STARTS*/
-
 header{
     background-color: #fafafa;
     box-shadow: 0 1px 5px #cac7c7;
@@ -77,11 +76,11 @@ header{
     display:none;
 }
 
-.logo h2{
+.logo-font{
     white-space: nowrap;
 }
 
-.logo svg{
+.logo-svg{
     width:25px;
 }
 
@@ -108,7 +107,7 @@ header{
 
 .contact-sales-anchor{
     background-color: #fafafa;
-    border: 1px solid rgb(16, 60, 117);
+    border: 1px solid #103c75;
     border-radius: 28px;
     padding:15px 10px 15px 10px;
     transition: 0.3s;
@@ -117,8 +116,7 @@ header{
 
 .contact-sales-anchor:hover{
     background-color: #103c75;
-    transition: 0.3s;
-    
+    transition: 0.3s;  
 }
 
 .contact-sales-anchor:hover{
@@ -137,7 +135,7 @@ header{
 
 .menu-anchor:after{
     transition: all ease-in-out .3s;
-    border-bottom: 3px solid rgb(16, 60, 117);
+    border-bottom: 3px solid #103c75;
     width:0;
     display:flex;
     content: "";
@@ -150,7 +148,6 @@ header{
 .contact-sales-anchor:after{
     display:none;
 }
-/*HEADER CSS ENDS*/
 
 /*HERO CSS STARTS*/
 #hero{
@@ -159,7 +156,7 @@ header{
     margin:0 auto;
     display:flex; 
     align-items: center;
-    background:linear-gradient(90deg,rgba(150, 184, 205, 0.15) 50%, rgba(150, 184, 205, 0.10) 50%);
+    background:linear-gradient(90deg,#96b8cd26 50%, #96b8cd1a 50%);
 }
 
 .hero-wrapper{
@@ -215,23 +212,22 @@ header{
 /*styling the contact sales button*/
 .page-contact-sales-btn{
     text-decoration: none;
-    border: 1px solid rgb(16, 60, 117);
+    border: 1px solid #103c75;
     align-content:center;
     padding:12px;
     font-size: 90%;
     border-radius: 22px;
-    background-color: rgb(16, 60, 117);
+    background-color: #103c75;
     color:#fafafa;
     transition: 0.3s;
-    
 }
-
+/*adding a hover effect to the contact sales button*/
 .page-contact-sales-btn:hover{
-    background-color:rgb(160, 178, 233);
+    background-color:#a0b2e9;
     transition: 0.3s;
     background-color:#fafafa;
     color:rgb(16, 60, 117);
-    border:1px solid rgb(16, 60, 117);
+    border:1px solid #103c75;
 }
 
 .hero-image{
@@ -244,16 +240,15 @@ header{
     max-width:500px;
     float:right;
 }
-/* HERO CSS ENDS*/
 
 /*PRICING CARDS START*/
 #pricing-cards{
     width:100%;
     display:flex;
-    background-color: rgba(234, 238, 245, 0.3);
+    background-color: #eaeef54d;
     flex-flow: row wrap;
     padding-bottom:60px;
-    height:1000px;
+    height:100vh;
 }
 
 .pricing-cards-container{
@@ -271,6 +266,7 @@ header{
     color:#103c75;
     flex-basis:100%;
     align-content: center; 
+    height:15%
 }
 
 .pricing-card{
@@ -295,16 +291,19 @@ header{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border:3px solid hsl(241, 69%, 67%);
+    border:3px solid #7371e5;
 }
 
-.best-deal{
-    background-color:hsl(241, 69%, 67%);
-    color:#f1f7f5;
-    margin-top: 0;
+.most-popular{
+    background-color:#7371e5;
+    margin-top:0;
     align-content:center;
     height:40px;
     font-size: 100%;
+}
+
+.most-popular-heading{
+    color:#f1f7f5;
 }
 
 .pricing-card-paragraph{
@@ -330,6 +329,7 @@ header{
     margin-left:5px;
     color:#0635ce;
 }
+
 .save-cut-amount{
     font-weight: 300;
 }
@@ -347,18 +347,15 @@ header{
 }
 
 .card2-save-percentage{
-    background-color: rgb(250, 199, 199);
-    color:rgb(209, 46, 46)
+    background-color: #fac7c7;
+    color:#d12e2e
 }
 
 .price{
     padding-top:30px;
 }
 
-.card2{
-    border:2px solid #809cf7;
-}
-
+/* styling the hr element just for the cards*/
 .card-thematic-break{
     border:1px solid #c3cef3;
     margin-left:50px;
@@ -379,29 +376,26 @@ header{
     font-size: 85%;
 }
 
-.card-checkmarks-symbol{
+.card-checkmarks-symbol{  /*checkmark symbol */
     color:rgb(19, 194, 19);
     font-weight: 600;
 }
 
 .card-checkmarks-element{
     padding-bottom:10px;
-    
 }
-
+/* Make the contact sales btn stay at the bottom of the cards*/
 .pricing-cards-btn{
     flex-basis:100%;
     text-align: center;
-    
 }
-/*PRICING CARDS END*/
 
 /*FOUR CARDS STARTS*/
 #four-cards{
     width: 100%;
     margin:0 auto;
     display:flex;
-    height:900px;
+    height:100vh;
     align-items: center;
 }
 
@@ -437,7 +431,6 @@ header{
 }
 
 .first-picture-card img{
-    max-width:400px;
     float:right;
 }
 
@@ -450,11 +443,7 @@ header{
     flex:1;
 }
 
-.second-picture-card-low-res{
-    display:none;
-}
-
-.second-picture-card img{
+.picture-cards-img{
     max-width:400px;
 }
 
@@ -463,8 +452,8 @@ header{
 #reviews{
     display:flex;
     width:100%;
-    background-color: rgba(234, 238, 245, 0.3);
-    height:800px;
+    background-color: #eaeef54d;
+    height:80vh;
     align-items: center;
 }
 
@@ -515,7 +504,7 @@ header{
 #get-started{
     display:flex;
     width:100%;
-    background-color:rgb(234, 244, 246);
+    background-color:#eaf4f6;
 }
 
 .get-started-container{
@@ -541,9 +530,7 @@ header{
     color:#150b38;
 }
 
-
 /*FOOTER STARTS */
-
 footer{
     display:flex;
     width:100%;
@@ -623,14 +610,12 @@ footer{
     flex-flow:row wrap;
     flex-basis: 100%;
     justify-content: center;
-    
-    
 }
 
 .break-line{
     width:100%;
     margin-top:20px;
-    color: rgba(255, 255, 255, 0.2)
+    color: #ffffff33
 }
 
 .copyright-paragraph{
@@ -692,7 +677,6 @@ footer{
     box-sizing: border-box;
 }
 
-
 .form-group{
     padding-bottom:25px; 
     display:flex;
@@ -746,7 +730,6 @@ footer{
     box-shadow: 0px 0px 12px #dfdddd ;
     margin:0 auto;
     justify-content: space-between;
-    
 }
 
 .form-action-close-btn{
@@ -764,9 +747,8 @@ footer{
 /* Styling the Send Message button */
 .submit-group{
     text-align: center;
-    
-
-    input[type="submit"]{
+}  
+.contact-form-btn{
         appearance: none;
         border:none;
         outline:none;
@@ -777,39 +759,36 @@ footer{
         color:#fafafa;
         transition: 0.4s;
         cursor: pointer;
-        
-        &:hover{
-            background-color:#a0b2e9;
-            transition: 0.4s;
-        }
-    }
+}    
+
+.contact-form-btn:hover{
+    background-color:#a0b2e9;
+    transition: 0.4s;
 }
 
-.input input{
-    background-color:rgb(235, 239, 240,0.5);
-    border:1px solid rgb(16, 60, 117,0.2);
+.contact-form-input{
+    background-color:#ebeff080;
+    border:1px solid #103c7533;
     display:block;
     width:100%;
     border-radius: 5px;
     appearance: none;
     outline:none;
-    /*border:none;*/
     padding:8px;
 }
 
-.full textarea{
+.text-area{
     min-height:100px;
     width:100%;
-    background-color:rgb(235, 239, 240,0.5);
+    background-color:#ebeff080;
     border-radius: 10px;
-    border:1px solid rgb(16, 60, 117,0.2);
+    border:1px solid #103c7533;
     resize:none;
     padding:8px;
 }
 
 /* HELP STYLE */
-
-.wrapper {
+.help-wrapper {
     max-width:800px;
     margin: 0 auto;
     display:flex;
@@ -820,20 +799,19 @@ footer{
     max-height:2000px;
 }
   
-.wrapper > p,
-.wrapper > h1 {
+.center-text{
     margin: 1.5rem 0;
     text-align: center;
 }
   
-.wrapper > h1 {
+.help-heading {
     padding-bottom:40px;
     color:#103c75;
 }
   
-.accordion {
+.drop-down {
     background-color: white;
-    color: rgba(0, 0, 0, 0.8);
+    color: #000000cc;
     cursor: pointer;
     font-size: 1.1rem;
     width: 100%;
@@ -848,11 +826,11 @@ footer{
 }
   
 .active,
-.accordion:hover {
+.drop-down:hover {
     background-color: #f1f7f5;
 }
 
-.pannel {
+.panel {
     padding: 0 2rem 2.5rem 2rem;
     overflow: hidden;
     background-color: #f1f7f5;
@@ -860,7 +838,7 @@ footer{
     
 }
 
-.pannel p {
+.panel-paragraph {
     color: rgba(0, 0, 0, 0.7);
     font-size: 90%;
     line-height: 1.4;
@@ -881,7 +859,6 @@ footer{
 
 /* MEDIA QUERIES */
 /* 1200 pixels and less*/
-
 @media screen and (max-width:1200px) {
     .hero-heading{
         font-size: 240%;
@@ -897,32 +874,31 @@ footer{
     
     .reviews-container{
         gap:40px;
-        .reviews-box{
-            width:250px;
-            height:360px;
-        }
+    }
+    .reviews-box{
+        width:250px;
+        height:360px;
+    }
 
-        .reviews-box-content{
-            
-            height:90%;
-            padding:10px;
-            
-        }
-    }    
+    .reviews-box-content{
+        height:90%;
+        padding:10px;
+    }  
         
 }
 
 /* 976 pixels and less */
 @media screen and (max-width:976px){
 
-    .hero-wrapper{
-        height:800px;
-    }
     #hero{
         height:1000px;
         background:none;
     }
-    
+
+    .hero-wrapper{
+        height:800px;
+    }
+   
     #pricing-cards{
         height:1000px;
     }
@@ -961,14 +937,10 @@ footer{
     }
 
     .hamburger-container a:hover{
-        color:black;
+        color:#000000;
         transition:0.4s;
     }
-      
-    .navbar .nav-container a:hover{
-         color: purple;
-    }
-      
+        
     .hamburger-container {
         display: flex;
         position: relative;
@@ -1008,7 +980,6 @@ footer{
         width: 35px;
         border-radius: 10px;
         background: #0e2431;
-    
     }
     
     /* Adding transitions  */
@@ -1037,7 +1008,6 @@ footer{
         flex-direction: column;
         transition: transform 0.5s ease-in-out;
         text-align: center;
-       
     }
     
     .menu-hamburger .menu-items li {
@@ -1045,7 +1015,6 @@ footer{
         font-size: 120%;
         font-weight: 500;
     }
-    
     
     /* Controlling the state of the icon */
     .menu-hamburger input[type="checkbox"]:checked ~ .menu-items {
@@ -1070,7 +1039,7 @@ footer{
 
     /* RESIZE THE 3 PRICING CARDS */
     #pricing-cards{
-        height:800px;
+        height:900px;
     }
 
     .pricing-cards-heading{
@@ -1104,22 +1073,23 @@ footer{
     }
 
     .four-cards-container{
+        display:flex;
         flex-basis: 50%;
-        justify-content: center;
         row-gap: 50px;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
     }   
 
-    .second-picture-card-high-res{
-        display:none;
+    /* move the second picture card to the end*/
+    .second-picture-card{
+        order: 4;
     }
-
-    .second-picture-card-low-res{
-        display:block;
-    }
-
+    
     #reviews{
-        height:820px;
+        height:1000px;
     }
+    
     .reviews-container{
         justify-content: center;
         row-gap:40px;
@@ -1129,11 +1099,6 @@ footer{
         padding:14px;
     }
     
-    .four-cards-container{
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 /* IPAD MINI 823 pixels and less */ 
@@ -1175,7 +1140,7 @@ footer{
 /* 637 pixels and less due to reviews box */ 
 @media screen and (max-width:637px){
     #reviews{
-        height:1200px;
+        height:1400px;
     }  
 }
     
@@ -1293,7 +1258,7 @@ footer{
         height:200px;
    }
 
-   .wrapper{
+   .help-wrapper{
         max-height:3000px;
    }
    
@@ -1306,7 +1271,10 @@ footer{
 /* 375 pixels and less*/
 
 @media screen and (max-width:375px){
-    
+    /*for Galaxy S III*/
+    .main-navigation{
+        padding:0px;
+    }
     
     .page-contact-sales-btn{
         padding:8px;
@@ -1327,7 +1295,7 @@ footer{
     
     #pricing-cards{
         align-items: center;
-        height:1900px;
+        height:1800px;
     }
 
     .pricing-card{
@@ -1344,8 +1312,12 @@ footer{
         justify-content: space-between;
     }
 
-    .best-deal{
+    .most-popular{
         margin-bottom: 20px;
+    }
+
+    .pricing-cards-heading{
+        font-size: 150%;
     }
 
     .pricing-card-heading{
@@ -1421,6 +1393,10 @@ footer{
         font-size: 80%;
     }
     
+    #reviews{
+        height:1300px;
+    }
+    
     .reviews-box{
         height:320px;
     }
@@ -1435,87 +1411,77 @@ footer{
         
     #main-contact{
         height:1200px;
+    }
         
-        .contact-section{
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .contact-container{
-            padding:10px;
-        }
-
-        h1{
-            font-size: 100%;
-            text-align: center;
-        }
-
-        p{
-            font-size:80%;
-        }
+    .contact-section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contact-container{
+        padding:10px;
     }
 
+    .contact-container-heading{
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .first-paragraph{
+        font-size:80%;
+    }
+    
     #get-started{
         height:140px;
-        
-        .get-started-container{
-            padding:12px;
-            
-            .get-started-text{
-                h1{
-                    font-size: 100%;
-                }
+    }  
+    
+    .get-started-container{
+        padding:12px;
+    }   
 
-                p{
-                    font-size: 80%;
-                }
-            }
+    .get-started-heading{
+        font-size: 100%;
+    }
 
-            .get-started-btn .btn{
-                padding:8px;
-                font-size: 80%;
-            }
-        }
-
+    .get-started-paragraph{
+        font-size: 80%;
+    }
+    
+    .get-started-btn .btn{
+        padding:8px;
+        font-size: 80%;
     }
 
     .footer-container{
         padding:12px;
-        
+    }    
             
-        .footer-col-1{
-            h2{
-                font-size: 120%;
-            }
+    .footer-logo{
+        font-size: 120%;
+    }
 
-            form label{
-                font-size: 80%;
-            }
+    .form-label{
+        font-size: 80%;
+    }
 
-            .checkbox-label{
-                font-size: 60%;
-            }
-        }
+    .checkbox-label{
+        font-size: 60%;
+    }
 
-        .footer-col-2{
-            a{
-                font-size: 80%;
-            }
-        }
+    .footer-anchor{
+        font-size: 80%;
+    }
 
-        .social-media-links{
-            h2{
-                font-size: 100%;
-            }
+    .social-media-heading{
+        font-size: 100%;
+    }
 
-            a{
-                font-size:120%
-            }
-        }
-    } 
+    .social-media-anchor{
+        font-size:120%
+    }
+    
 }
 
 /* 320pixels and less / Iphone5 /SE*/
-
 @media screen and (max-width:320px){
     main {
         overflow-x: hidden;
