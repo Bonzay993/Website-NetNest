@@ -248,7 +248,7 @@ header{
     background-color: #eaeef54d;
     flex-flow: row wrap;
     padding-bottom:60px;
-    height:1000px;
+    height:100vh;
 }
 
 .pricing-cards-container{
@@ -266,6 +266,7 @@ header{
     color:#103c75;
     flex-basis:100%;
     align-content: center; 
+    height:15%
 }
 
 .pricing-card{
@@ -293,13 +294,16 @@ header{
     border:3px solid #7371e5;
 }
 
-.best-deal{
+.most-popular{
     background-color:#7371e5;
-    color:#f1f7f5;
-    margin-top: 0;
+    margin-top:0;
     align-content:center;
     height:40px;
     font-size: 100%;
+}
+
+.most-popular-heading{
+    color:#f1f7f5;
 }
 
 .pricing-card-paragraph{
@@ -351,9 +355,6 @@ header{
     padding-top:30px;
 }
 
-.card2{
-    border:2px solid #809cf7;
-}
 /* styling the hr element just for the cards*/
 .card-thematic-break{
     border:1px solid #c3cef3;
@@ -394,7 +395,7 @@ header{
     width: 100%;
     margin:0 auto;
     display:flex;
-    height:900px;
+    height:100vh;
     align-items: center;
 }
 
@@ -452,7 +453,7 @@ header{
     display:flex;
     width:100%;
     background-color: #eaeef54d;
-    height:800px;
+    height:80vh;
     align-items: center;
 }
 
@@ -529,9 +530,7 @@ header{
     color:#150b38;
 }
 
-
 /*FOOTER STARTS */
-
 footer{
     display:flex;
     width:100%;
@@ -748,9 +747,8 @@ footer{
 /* Styling the Send Message button */
 .submit-group{
     text-align: center;
-    
-
-    input[type="submit"]{
+}  
+.contact-form-btn{
         appearance: none;
         border:none;
         outline:none;
@@ -761,15 +759,14 @@ footer{
         color:#fafafa;
         transition: 0.4s;
         cursor: pointer;
-        
-        &:hover{
-            background-color:#a0b2e9;
-            transition: 0.4s;
-        }
-    }
+}    
+
+.contact-form-btn:hover{
+    background-color:#a0b2e9;
+    transition: 0.4s;
 }
 
-.input input{
+.contact-form-input{
     background-color:#ebeff080;
     border:1px solid #103c7533;
     display:block;
@@ -780,7 +777,7 @@ footer{
     padding:8px;
 }
 
-.full textarea{
+.text-area{
     min-height:100px;
     width:100%;
     background-color:#ebeff080;
@@ -791,7 +788,7 @@ footer{
 }
 
 /* HELP STYLE */
-.wrapper {
+.help-wrapper {
     max-width:800px;
     margin: 0 auto;
     display:flex;
@@ -802,18 +799,17 @@ footer{
     max-height:2000px;
 }
   
-.wrapper > p,
-.wrapper > h1 {
+.center-text{
     margin: 1.5rem 0;
     text-align: center;
 }
   
-.wrapper > h1 {
+.help-heading {
     padding-bottom:40px;
     color:#103c75;
 }
   
-.accordion {
+.drop-down {
     background-color: white;
     color: #000000cc;
     cursor: pointer;
@@ -830,11 +826,11 @@ footer{
 }
   
 .active,
-.accordion:hover {
+.drop-down:hover {
     background-color: #f1f7f5;
 }
 
-.pannel {
+.panel {
     padding: 0 2rem 2.5rem 2rem;
     overflow: hidden;
     background-color: #f1f7f5;
@@ -842,7 +838,7 @@ footer{
     
 }
 
-.pannel p {
+.panel-paragraph {
     color: rgba(0, 0, 0, 0.7);
     font-size: 90%;
     line-height: 1.4;
@@ -863,7 +859,6 @@ footer{
 
 /* MEDIA QUERIES */
 /* 1200 pixels and less*/
-
 @media screen and (max-width:1200px) {
     .hero-heading{
         font-size: 240%;
@@ -1263,7 +1258,7 @@ footer{
         height:200px;
    }
 
-   .wrapper{
+   .help-wrapper{
         max-height:3000px;
    }
    
@@ -1276,7 +1271,10 @@ footer{
 /* 375 pixels and less*/
 
 @media screen and (max-width:375px){
-    
+    /*for Galaxy S III*/
+    .main-navigation{
+        padding:0px;
+    }
     
     .page-contact-sales-btn{
         padding:8px;
@@ -1314,7 +1312,7 @@ footer{
         justify-content: space-between;
     }
 
-    .best-deal{
+    .most-popular{
         margin-bottom: 20px;
     }
 
@@ -1413,87 +1411,77 @@ footer{
         
     #main-contact{
         height:1200px;
+    }
         
-        .contact-section{
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .contact-container{
-            padding:10px;
-        }
-
-        h1{
-            font-size: 100%;
-            text-align: center;
-        }
-
-        p{
-            font-size:80%;
-        }
+    .contact-section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contact-container{
+        padding:10px;
     }
 
+    .contact-container-heading{
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .first-paragraph{
+        font-size:80%;
+    }
+    
     #get-started{
         height:140px;
-        
-        .get-started-container{
-            padding:12px;
-            
-            .get-started-text{
-                h1{
-                    font-size: 100%;
-                }
+    }  
+    
+    .get-started-container{
+        padding:12px;
+    }   
 
-                p{
-                    font-size: 80%;
-                }
-            }
+    .get-started-heading{
+        font-size: 100%;
+    }
 
-            .get-started-btn .btn{
-                padding:8px;
-                font-size: 80%;
-            }
-        }
-
+    .get-started-paragraph{
+        font-size: 80%;
+    }
+    
+    .get-started-btn .btn{
+        padding:8px;
+        font-size: 80%;
     }
 
     .footer-container{
         padding:12px;
-        
+    }    
             
-        .footer-col-1{
-            h2{
-                font-size: 120%;
-            }
+    .footer-logo{
+        font-size: 120%;
+    }
 
-            form label{
-                font-size: 80%;
-            }
+    .form-label{
+        font-size: 80%;
+    }
 
-            .checkbox-label{
-                font-size: 60%;
-            }
-        }
+    .checkbox-label{
+        font-size: 60%;
+    }
 
-        .footer-col-2{
-            a{
-                font-size: 80%;
-            }
-        }
+    .footer-anchor{
+        font-size: 80%;
+    }
 
-        .social-media-links{
-            h2{
-                font-size: 100%;
-            }
+    .social-media-heading{
+        font-size: 100%;
+    }
 
-            a{
-                font-size:120%
-            }
-        }
-    } 
+    .social-media-anchor{
+        font-size:120%
+    }
+    
 }
 
 /* 320pixels and less / Iphone5 /SE*/
-
 @media screen and (max-width:320px){
     main {
         overflow-x: hidden;
