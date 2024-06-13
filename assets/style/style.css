@@ -1546,5 +1546,9 @@ footer{
     .hero-image-img{
         width:300px;
     }
+
+    .reviews-container{
+        padding:0;
+    }
 }
    
