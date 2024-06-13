@@ -574,11 +574,22 @@ footer{
     font-size:13px;
 }
 
-.submit{
+.footer-submit{
     margin-top:15px;
-    width:100px;
+    width:100%;
     height:20px;
     border-radius:5px;
+    background-color: #103c75;
+    color:#fafafa;
+    transition: 0.3s;
+    border:1px solid #103c75;
+}
+
+.footer-submit:hover{
+    transition:0.3s;
+    background-color:#fafafa;
+    color:#103c75;
+    border:1px solid #103c75;
 }
 
 .footer-col-2{
@@ -860,6 +871,21 @@ footer{
 /* MEDIA QUERIES */
 /* 1200 pixels and less*/
 @media screen and (max-width:1200px) {
+    
+    #hero{
+        height:70vh;
+    }
+    #pricing-cards{
+        height:60vh;
+    }
+
+    #four-cards{
+        height:70vh;
+    }
+
+    #reviews{
+        height:50vh;
+    }
     .hero-heading{
         font-size: 240%;
     }
@@ -1176,8 +1202,8 @@ footer{
     }
     
     .main-page-padding{
-        padding-left:20px;
-        padding-right: 20px;
+        padding-left:10px;
+        padding-right: 10px;
     }
 }
 
@@ -1266,16 +1292,33 @@ footer{
         padding:15px;
    }
 
+   .footer-container{
+    padding:20px;
+   }
+
+   .footer-col-1{
+    max-width: 150px;
+   }
+
+   .checkbox-label{
+    font-size: 60%;
+   }
+
+   .social-media-heading{
+    font-size: 100%;
+    padding-bottom: 5px;
+   }
+
+   .social-media-anchor{
+    font-size: 150%;
+   }
 }
 
 /* 375 pixels and less*/
 
 @media screen and (max-width:375px){
     /*for Galaxy S III*/
-    .main-navigation{
-        padding:0px;
-    }
-    
+   
     .page-contact-sales-btn{
         padding:8px;
         font-size: 80%;
@@ -1332,7 +1375,6 @@ footer{
 
     .logo{
         font-size: 85%;
-        width:0px;
     }
 
     .menu-hamburger  .menu-items{
@@ -1417,6 +1459,7 @@ footer{
         padding-left: 15px;
         padding-right: 15px;
     }
+    
     .contact-container{
         padding:10px;
     }
@@ -1451,15 +1494,23 @@ footer{
         font-size: 80%;
     }
 
+    .footer-col-1{
+        max-width: 110px;
+    }
+
     .footer-container{
         padding:12px;
     }    
             
     .footer-logo{
-        font-size: 120%;
+        font-size: 110%;
     }
 
     .form-label{
+        font-size: 60%;
+    }
+
+    .email-label{
         font-size: 80%;
     }
 
