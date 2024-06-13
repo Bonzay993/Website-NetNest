@@ -590,6 +590,7 @@ footer{
     background-color:#fafafa;
     color:#103c75;
     border:1px solid #103c75;
+    cursor: pointer;
 }
 
 .footer-col-2{
@@ -1549,6 +1550,26 @@ footer{
 
     .reviews-container{
         padding:0;
+    }
+
+    .logo{
+        padding:0;
+    }
+    .footer-col-1{
+        max-width: 100px;
+    }
+    .footer-col-2{
+        flex-basis: 10%;
+        height:40%;
+        gap: 10px;
+    }
+
+    .footer-anchor{
+        font-size: 80%;
+    }
+
+    .footer-email{
+        height:8px;
     }
 }
    
