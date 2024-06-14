@@ -26,11 +26,11 @@ hr {
     border-style: inset;
     border-width: 1px;
   } 
-  
+/* prevents the user from selecting text*/
 .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+        user-select: none; /* Standard syntax */
   }
 
   h1{
@@ -129,8 +129,11 @@ header{
 
 .menu-anchor{
     text-decoration: none;
-    color:#0c0c0c;
-    font-size: 92%;
+    color:#103c75;
+    font-size: 85%;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    font-weight: bold;
 }
 
 .menu-anchor:after{
@@ -150,13 +153,14 @@ header{
 }
 
 /*HERO CSS STARTS*/
+
 #hero{
     height:100vh;
     width:100%;
     margin:0 auto;
     display:flex; 
     align-items: center;
-    background:linear-gradient(90deg,#96b8cd26 50%, #96b8cd1a 50%);
+    background:linear-gradient(90deg,#96b8cd26 50%, #96b8cd1a 50%);/* Using a gradient to split up the hero in 2 different colors*/
 }
 
 .hero-wrapper{
@@ -229,6 +233,7 @@ header{
     color:rgb(16, 60, 117);
     border:1px solid #103c75;
 }
+
 
 .hero-image{
     flex-basis:50%;
@@ -448,7 +453,6 @@ header{
 }
 
 /* REVIEWS STARTS */
-
 #reviews{
     display:flex;
     width:100%;
@@ -590,6 +594,7 @@ footer{
     background-color:#fafafa;
     color:#103c75;
     border:1px solid #103c75;
+    cursor: pointer;
 }
 
 .footer-col-2{
@@ -604,6 +609,7 @@ footer{
 
 .social-media-heading{
     padding-bottom:20px;
+    text-transform: uppercase;
 }
 
 
@@ -873,18 +879,18 @@ footer{
 @media screen and (max-width:1200px) {
     
     #hero{
-        height:70vh;
+        height:900px;
     }
     #pricing-cards{
-        height:60vh;
+        height:900px;
     }
 
     #four-cards{
-        height:70vh;
+       height:900px;
     }
 
     #reviews{
-        height:50vh;
+        height:800px;
     }
     .hero-heading{
         font-size: 240%;
@@ -1441,6 +1447,7 @@ footer{
     
     .reviews-box{
         height:320px;
+        width:240px;
     }
 
     .reviews-box-heading{
@@ -1549,6 +1556,26 @@ footer{
 
     .reviews-container{
         padding:0;
+    }
+
+    .logo{
+        padding:0;
+    }
+    .footer-col-1{
+        max-width: 100px;
+    }
+    .footer-col-2{
+        flex-basis: 10%;
+        height:40%;
+        gap: 10px;
+    }
+
+    .footer-anchor{
+        font-size: 80%;
+    }
+
+    .footer-email{
+        height:8px;
     }
 }
    
