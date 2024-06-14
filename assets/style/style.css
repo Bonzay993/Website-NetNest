@@ -1211,13 +1211,16 @@ footer{
         padding-left:10px;
         padding-right: 10px;
     }
+    .logo{
+        padding-left: 25px;
+    }
 }
 
 /* 450pixels and less ex: PIXEL 7*/ 
 @media screen and (max-width:450px){
 
     .logo{
-        padding-left: 10px;
+        padding-left: 25px;
     }
    
     .hero-wrapper{
@@ -1324,7 +1327,9 @@ footer{
 
 @media screen and (max-width:375px){
     /*for Galaxy S III*/
-   
+   .logo{
+    padding-left: 0px;
+   }
     .page-contact-sales-btn{
         padding:8px;
         font-size: 80%;
