@@ -15,10 +15,23 @@ The purpose of this project is to create an online platform where users can expl
 
 ## Features
 
-- Responsive design for optimal viewing experience across devices.
-- Detailed information about NetNest's hosting services including features, pricing, and customer testimonials.
-- Contact form for inquiries and support requests.
-- Integration with social media platforms for easy access to NetNest's social presence.
+### Responsive Design
+- **Mobile-Friendly Layout:** The website is designed to be fully responsive, ensuring a seamless experience across desktops, tablets, and mobile devices.
+- **Flexible Flex System:** Uses a flexible Flex system that adapts to various screen sizes and orientations, providing an optimal viewing experience.
+
+### Hosting Services Information
+- **Feature Comparison Tables:** Interactive tables that allow users to compare the features of different hosting plans side by side.
+- **Pricing Information:** Clear and transparent pricing details for each hosting plan, including any discounts or special offers.
+
+### Customer Testimonials
+- **User Reviews:** A section dedicated to customer testimonials, showcasing positive feedback and experiences from current clients.
+- **Star Ratings:** Visual star ratings to quickly convey customer satisfaction levels.
+
+### Contact Form
+- **Inquiry Form:** A comprehensive contact form for users to submit inquiries, request quotes, or ask for support.
+- **Spam Protection:** Built-in CAPTCHA or similar mechanisms to prevent spam submissions.
+- **Contact Details:** Display of additional contact details, including phone numbers and email addresses for direct communication.
+
 
 ## Future Features
 

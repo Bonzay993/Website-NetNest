@@ -155,7 +155,7 @@ header{
 /*HERO CSS STARTS*/
 
 #hero{
-    height:100vh;
+    height:55rem;
     width:100%;
     margin:0 auto;
     display:flex; 
@@ -253,7 +253,7 @@ header{
     background-color: #eaeef54d;
     flex-flow: row wrap;
     padding-bottom:60px;
-    height:100vh;
+    height:60rem;
 }
 
 .pricing-cards-container{
@@ -400,7 +400,7 @@ header{
     width: 100%;
     margin:0 auto;
     display:flex;
-    height:100vh;
+    height:55rem;
     align-items: center;
 }
 
@@ -457,7 +457,7 @@ header{
     display:flex;
     width:100%;
     background-color: #eaeef54d;
-    height:80vh;
+    height:55rem;
     align-items: center;
 }
 
@@ -1581,6 +1581,10 @@ footer{
 
     .footer-email{
         height:8px;
+    }
+
+    .reviews-box-paragraph{
+        font-size: 80%;
     }
 }
    
