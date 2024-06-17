@@ -71,3 +71,6 @@ Ensuring the quality and correctness of the code is crucial for a robust and rel
   - [Validate CSS](https://jigsaw.w3.org/css-validator/)
 
 
+### Test Cases
+
+For detailed test cases and steps to test the website, please refer to the [TEST_CASES.md](TEST_CASES.md) file.
