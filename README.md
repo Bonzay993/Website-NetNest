@@ -48,3 +48,26 @@ The purpose of this project is to create an online platform where users can expl
 ## Wireframes
 
 Wireframes for the website can be found in the `wireframes` directory of this repository. These wireframes provide a visual representation of the layout and design of the website pages.
+
+## Technology
+
+- **HTML5:** Provides the structure and content of the website.
+- **CSS3:** Used for styling and layout, ensuring a visually appealing design.
+- **JavaScript:** Adds interactivity and dynamic content to the Help section of the website.
+- **Font Awesome:** Provides scalable vector icons that can be customized with CSS.
+
+## Testing
+
+### Code Validation
+
+Ensuring the quality and correctness of the code is crucial for a robust and reliable website. The HTML and CSS code for the NetNest Website has been validated using the W3C validation services.
+
+#### HTML Validation
+- **W3C HTML Validator:** The HTML code has been checked using the W3C HTML Validator to ensure it follows the standards and is free from errors.
+  - [Validate HTML](https://validator.w3.org/)
+
+#### CSS Validation
+- **W3C CSS Validator:** The CSS code has been validated using the W3C CSS Validator to ensure it meets the standards and is error-free.
+  - [Validate CSS](https://jigsaw.w3.org/css-validator/)
+
+
