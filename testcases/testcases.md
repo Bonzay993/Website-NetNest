@@ -1,4 +1,5 @@
 ### 1. Header Navigation
+
 **Test Case 1.1: Main Navigation Links**
 - **Objective:** Ensure that all navigation links in the header navigate to the correct sections/pages.
 - **Steps:**
@@ -22,6 +23,7 @@
   4. Click on each menu item and verify that it navigates to the correct section/page (same as Test Case 1.1).
 
 ### 2. Hero Section
+
 **Test Case 2.1: Hero Heading and Paragraph**
 - **Objective:** Ensure the hero heading and paragraph are displayed correctly.
 - **Steps:**
@@ -40,6 +42,7 @@
   1. Verify that the hero image is visible and displays the correct image.
 
 ### 3. Pricing Section
+
 **Test Case 3.1: Pricing Cards Display**
 - **Objective:** Ensure that all pricing cards are displayed correctly with the right content.
 - **Steps:**
@@ -53,6 +56,7 @@
   2. Verify that it redirects to the `contact.html` page.
 
 ### 4. Four Cards Section
+
 **Test Case 4.1: Text and Image Cards**
 - **Objective:** Ensure that text and image cards are displayed correctly.
 - **Steps:**
@@ -60,6 +64,7 @@
   2. Verify that each image card displays the correct image.
 
 ### 5. Reviews Section
+
 **Test Case 5.1: Review Boxes Content**
 - **Objective:** Ensure that all review boxes display the correct content.
 - **Steps:**
@@ -67,6 +72,7 @@
   2. Verify that each box displays the correct heading, review text, and five-star rating.
 
 ### 6. Get Started Section
+
 **Test Case 6.1: Contact Sales Button**
 - **Objective:** Ensure that the "Contact Sales" button works correctly.
 - **Steps:**
@@ -74,6 +80,7 @@
   2. Verify that it redirects to the `contact.html` page.
 
 ### 7. Footer
+
 **Test Case 7.1: Subscription Form**
 - **Objective:** Ensure that the subscription form works correctly.
 - **Steps:**
@@ -98,3 +105,4 @@
 - **Steps:**
   1. Click on each social media icon (Facebook, Instagram, YouTube, Twitter) in the footer.
   2. Verify that each link opens the corresponding social media page in a new tab.
+
