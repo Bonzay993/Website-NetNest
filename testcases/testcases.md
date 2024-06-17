@@ -106,3 +106,4 @@
   1. Click on each social media icon (Facebook, Instagram, YouTube, Twitter) in the footer.
   2. Verify that each link opens the corresponding social media page in a new tab.
 
+
