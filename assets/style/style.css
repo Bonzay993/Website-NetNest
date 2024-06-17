@@ -50,6 +50,7 @@ header{
     height:80px;
     margin-bottom: 5px;
     position:fixed;
+    top:0;
     width:100%;
     z-index: 99999; 
     display:flex;
@@ -153,7 +154,6 @@ header{
 }
 
 /*HERO CSS STARTS*/
-
 #hero{
     height:55rem;
     width:100%;
@@ -654,16 +654,18 @@ footer{
 
 /* CONTACT CSS */
 #main-contact{
-    height:1360px;
+    height:100rem;
+    display: flex;
+    flex-flow:row wrap;
+    
 }
 
-.contact-section{
-    position:relative;
-    top:160px;
-    padding-top:50px;
-    padding-bottom:50px;
+#contact-section{
     padding-left:40px;
     padding-right:40px;
+    flex-basis:100%;
+    padding-top: 160px;
+
 }
 
 .contact-container{
@@ -678,6 +680,8 @@ footer{
     padding:40px;
     box-sizing: border-box;
     color:#201e1e;
+    
+    
 }
 
 .contact-container-heading{
@@ -764,6 +768,10 @@ footer{
 /* Styling the Send Message button */
 .submit-group{
     text-align: center;
+    display:flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    gap:20px;
 }  
 .contact-form-btn{
         appearance: none;
@@ -803,6 +811,51 @@ footer{
     resize:none;
     padding:8px;
 }
+/* Get in Touch Section */
+#get-in-touch{
+    width:100%;
+    background-color:#eaeef54d;
+    display:flex;
+    justify-content: center;
+    height:10rem;
+    margin-top: 200px;
+    
+}
+
+.get-in-touch-container{
+    margin:0 auto;
+    display:flex;
+    flex-flow:row wrap;
+    width:1200px;
+    justify-content: center;
+    align-content: center;
+    gap:50px;
+    padding:20px;
+}
+
+.get-in-touch-element{
+    display:flex;
+    flex-flow:column wrap;
+    text-align:center;
+    width:20rem;
+}
+
+.get-in-touch-icon{
+    font-size: 200%;
+    color:#103c75;
+}
+
+.get-in-touch-paragraph{
+    text-align: center;
+    font-size: 100%;
+    color:#000000
+}
+
+.get-in-touch-heading{
+    font-size: 120%;
+    color:#103c75;
+}
+
 
 /* HELP STYLE */
 .help-wrapper {
@@ -916,7 +969,13 @@ footer{
         height:90%;
         padding:10px;
     }  
-        
+    #main-contact{
+        height:110rem;
+    }
+    #get-in-touch{
+        height:20rem;
+        margin-top:200px;
+    }
 }
 
 /* 976 pixels and less */
@@ -1130,6 +1189,12 @@ footer{
     .reviews-box-content{
         padding:14px;
     }
+
+
+    #get-in-touch{
+        height: 26rem;
+        margin-top: 110px;
+    }
     
 }
 
@@ -1158,6 +1223,11 @@ footer{
     #reviews{
         height:1000px;
     }
+
+    #get-in-touch{
+        height: 30rem;
+        margin-top: 42px;
+    }
 }
 
 /* Make the hover effect work at min 823px*/
@@ -1174,6 +1244,10 @@ footer{
     #reviews{
         height:1400px;
     }  
+
+    #get-in-touch{
+        margin-top:25px;
+    }
 }
     
 /* 575 pixels and less */
@@ -1211,9 +1285,19 @@ footer{
         padding-left:10px;
         padding-right: 10px;
     }
+    
     .logo{
         padding-left: 25px;
     }
+
+    .get-in-touch-element{
+        font-size: 80%;
+    }
+
+    #get-in-touch{
+        margin-top:0px;
+    }
+
 }
 
 /* 450pixels and less ex: PIXEL 7*/ 
@@ -1296,11 +1380,21 @@ footer{
    .help-wrapper{
         max-height:3000px;
    }
-   
+  
+  
    .contact-container{
         padding:15px;
+        width:310px;
    }
 
+   .g-recaptcha{
+    transform:scale(0.9)
+   }
+
+   #get-in-touch{
+    margin-top: 50px;
+   }
+   
    .footer-container{
     padding:20px;
    }
@@ -1464,16 +1558,23 @@ footer{
     }
         
     #main-contact{
-        height:1200px;
-    }
-        
-    .contact-section{
-        padding-left: 15px;
-        padding-right: 15px;
+        height:110rem;
+       
     }
     
+    #get-in-touch{
+        margin-top:60px;
+       
+    }
+   
     .contact-container{
-        padding:10px;
+        padding:20px;
+        max-width:280px;
+    }
+
+    .g-recaptcha{
+        transform: scale(0.75);
+        
     }
 
     .contact-container-heading{
