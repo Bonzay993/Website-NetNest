@@ -773,6 +773,11 @@ footer{
     flex-flow:row wrap;
     gap:20px;
 }  
+
+.g-recaptcha{
+    flex-basis:100%;
+    align-content: center;
+}
 .contact-form-btn{
         appearance: none;
         border:none;
@@ -784,6 +789,7 @@ footer{
         color:#fafafa;
         transition: 0.4s;
         cursor: pointer;
+
 }    
 
 .contact-form-btn:hover{
@@ -1383,16 +1389,18 @@ footer{
   
   
    .contact-container{
-        padding:15px;
+        padding:20px;
         width:310px;
    }
-
+   .contact-form-btn{
+    font-size: 70%;
+   }
    .g-recaptcha{
     transform:scale(0.9)
    }
 
    #get-in-touch{
-    margin-top: 50px;
+    margin-top: 46px;
    }
    
    .footer-container{
