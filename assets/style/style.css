@@ -76,6 +76,11 @@ header{
 .hamburger-container {
     display:none;
 }
+/* make the logo components not wrap around each other*/
+.logo-font{
+    white-space: nowrap;
+}
+
 /* the networking svg of the logo*/
 .logo-svg{
     width:25px;
@@ -749,7 +754,6 @@ footer{
    color:#777777;
 }
 
-/* Styling the Send Message button */
 .submit-group{
     text-align: center;
     display:flex;
@@ -762,6 +766,8 @@ footer{
     flex-basis:100%;
     align-content: center;
 }
+
+/* Styling the Send Message button */
 .contact-form-btn{
         appearance: none;
         border:none;
@@ -837,7 +843,7 @@ footer{
 .get-in-touch-paragraph{
     text-align: center;
     font-size: 100%;
-    color:#4d4d4d
+    color:#4d4d4d;
 }
 
 .get-in-touch-heading{
