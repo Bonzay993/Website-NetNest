@@ -32,12 +32,12 @@ hr {
     -ms-user-select: none; /* IE 10 and IE 11 */
         user-select: none; /* Standard syntax */
   }
-
+/*default h1 style*/
   h1{
     font-size:26px;
     line-height: 1.5;
   }
-  
+  /*default paragraph style*/
     p{
     font-size:14px;
     line-height:1.5;
@@ -49,13 +49,13 @@ header{
     box-shadow: 0 1px 5px #cac7c7;
     height:80px;
     margin-bottom: 5px;
-    position:fixed;
+    position:fixed;/* Make the navbar stay on top when scrolling*/
     top:0;
     width:100%;
-    z-index: 99999; 
+    z-index: 99999; /* Highest index number to make sure that the content goes behind the navbar when scrolling*/
     display:flex;
 }
-
+/* header container*/
 .main-navigation{
     display:flex;
     flex-flow:row wrap;
@@ -76,15 +76,11 @@ header{
 .hamburger-container {
     display:none;
 }
-
-.logo-font{
-    white-space: nowrap;
-}
-
+/* the networking svg of the logo*/
 .logo-svg{
     width:25px;
 }
-
+/* First 3 navbar links*/
 .menu-left{
     flex:2;
     justify-content: left;
@@ -93,41 +89,28 @@ header{
     gap:20px;
     padding-left: 15px;
 }
-
-.menu-left-element, .menu-right-element{
-    float:left;
-    align-content: center;
-}
-
+/* last 2 navbar links*/
 .menu-right{
     justify-content: right;
     list-style-type: none;
     display:flex;
     gap:20px;
 }
-
+/* contact sales link on the navbar*/
 .contact-sales-anchor{
     background-color: #fafafa;
     border: 1px solid #103c75;
     border-radius: 28px;
     padding:15px 10px 15px 10px;
-    transition: 0.3s;
-    color:#103c75;
+    transition: 0.3s
 }
 
 .contact-sales-anchor:hover{
     background-color: #103c75;
     transition: 0.3s;  
-}
-
-.contact-sales-anchor:hover{
     color:#fafafa;
 }
-
-.home{
-    font-weight: bold;
-}
-
+/* styling the navbar links*/
 .menu-anchor{
     text-decoration: none;
     color:#103c75;
@@ -136,7 +119,7 @@ header{
     letter-spacing: normal;
     font-weight: bold;
 }
-
+/* Underline effect for the navbar links*/
 .menu-anchor:after{
     transition: all ease-in-out .3s;
     border-bottom: 3px solid #103c75;
@@ -148,9 +131,13 @@ header{
 .menu-anchor:hover:after{
     width:100%;
 }
-
+/* removing the underline effect for the navbar contact sales*/
 .contact-sales-anchor:after{
     display:none;
+}
+
+.home{
+    color:#090613
 }
 
 /*HERO CSS STARTS*/
@@ -160,7 +147,8 @@ header{
     margin:0 auto;
     display:flex; 
     align-items: center;
-    background:linear-gradient(90deg,#96b8cd26 50%, #96b8cd1a 50%);/* Using a gradient to split up the hero in 2 different colors*/
+    /* Using a gradient to split up the hero in 2 different colors*/
+    background:linear-gradient(90deg,#96b8cd26 50%, #96b8cd1a 50%);
 }
 
 .hero-wrapper{
@@ -233,13 +221,12 @@ header{
     color:rgb(16, 60, 117);
     border:1px solid #103c75;
 }
-
-
+/*hero image container*/
 .hero-image{
     flex-basis:50%;
     margin:0 auto;
 }
-
+/* the actual img file*/
 .hero-image-img{
     margin-top: 5%;
     max-width:500px;
@@ -293,9 +280,6 @@ header{
 }
 
 .card2{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     border:3px solid #7371e5;
 }
 
@@ -825,7 +809,6 @@ footer{
     justify-content: center;
     height:10rem;
     margin-top: 200px;
-    
 }
 
 .get-in-touch-container{
@@ -854,7 +837,7 @@ footer{
 .get-in-touch-paragraph{
     text-align: center;
     font-size: 100%;
-    color:#000000
+    color:#4d4d4d
 }
 
 .get-in-touch-heading{
@@ -1582,7 +1565,6 @@ footer{
 
     .g-recaptcha{
         transform: scale(0.75);
-        
     }
 
     .contact-container-heading{
