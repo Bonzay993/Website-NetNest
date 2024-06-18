@@ -14,7 +14,7 @@ html{
 body{
     font-family: Roboto;
     color:#777777;
-    letter-spacing: 0.25px;
+    word-spacing: 0.05em;
 }    
 
 hr { 
@@ -198,6 +198,7 @@ header{
 .checkmarks-symbol{
     font-weight: bold;
     font-size:110%;
+    color:#05631b;
 }
 
 .checkmarks-anchor{
@@ -263,7 +264,7 @@ header{
     color:#103c75;
     flex-basis:100%;
     align-content: center; 
-    height:15%
+    height:10%;
 }
 
 .pricing-card{
@@ -293,7 +294,7 @@ header{
     margin-top:0;
     align-content:center;
     height:40px;
-    font-size: 100%;
+    font-size: 70%;
 }
 
 .most-popular-heading{
@@ -301,9 +302,10 @@ header{
 }
 
 .pricing-card-paragraph{
-    color:#201e1e;
     text-align: center;
     padding-top: 10px;
+    font-size: 80%;
+    color:#103c75;
 }
 
 .save{
@@ -329,15 +331,9 @@ header{
 }
 
 .final-price{
-    font-size: 250%;
+    font-size: 300%;
     font-weight:bold;
     color:#103c75;
-}
-
-.price span{
-    font-size: 130%;
-    padding-right:5px;
-    font-weight: bold;
 }
 
 .card2-save-percentage{
@@ -347,6 +343,12 @@ header{
 
 .price{
     padding-top:30px;
+}
+
+/* styling the spans around the price £ and /mo */
+.price-span{
+    color:#103c75;
+    font-size: 130%;
 }
 
 /* styling the hr element just for the cards*/
@@ -370,14 +372,15 @@ header{
     font-size: 85%;
 }
 
-.card-checkmarks-symbol{  /*checkmark symbol */
-    color:rgb(19, 194, 19);
-    font-weight: 600;
-}
-
 .card-checkmarks-element{
     padding-bottom:10px;
 }
+
+.card-checkmarks-symbol{  /*checkmark symbol */
+    color:#05631b;;
+    font-weight: bold;
+}
+
 /* Make the contact sales btn stay at the bottom of the cards*/
 .pricing-cards-btn{
     flex-basis:100%;
@@ -519,7 +522,7 @@ header{
 }
 
 .get-started-paragraph{
-    font-size: 120%;
+    font-size: 100%;
     color:#150b38;
 }
 
@@ -807,7 +810,7 @@ footer{
     resize:none;
     padding:8px;
 }
-/* Get in Touch Section */
+/* Get in Touch Section below the contact form */
 #get-in-touch{
     width:100%;
     background-color:#eaeef54d;
@@ -836,21 +839,20 @@ footer{
 }
 
 .get-in-touch-icon{
-    font-size: 200%;
+    font-size: 150%;
+    color:#103c75;
+}
+
+.get-in-touch-heading{
+    font-size: 100%;
     color:#103c75;
 }
 
 .get-in-touch-paragraph{
     text-align: center;
-    font-size: 100%;
+    font-size: 80%;
     color:#4d4d4d;
 }
-
-.get-in-touch-heading{
-    font-size: 120%;
-    color:#103c75;
-}
-
 
 /* HELP STYLE */
 .help-wrapper {
@@ -1286,7 +1288,7 @@ footer{
     }
 
     .get-in-touch-element{
-        font-size: 80%;
+        font-size: 98%;
     }
 
     #get-in-touch{
@@ -1312,9 +1314,14 @@ footer{
         padding-right: 0;
     }
 
+    .page-contact-sales-btn{
+        padding:8px;
+        font-size: 80%;
+    }
+
     #pricing-cards{
         padding-bottom:5px;  
-        height:1950px;
+        height:2050px;
     }  
         
     .pricing-cards-heading{
@@ -1375,11 +1382,15 @@ footer{
    .help-wrapper{
         max-height:3000px;
    }
-  
-  
+
+   #contact-section{
+    padding-left:0px;
+    padding-right: 0px;
+    
+   }
    .contact-container{
-        padding:20px;
-        width:310px;
+        padding:18px;
+        width:300px;
    }
    .contact-form-btn{
     font-size: 70%;
@@ -1389,7 +1400,7 @@ footer{
    }
 
    #get-in-touch{
-    margin-top: 46px;
+    margin-top: 44px;
    }
    
    .footer-container{
@@ -1440,7 +1451,7 @@ footer{
     
     #pricing-cards{
         align-items: center;
-        height:1800px;
+        height:2000px;
     }
 
     .pricing-card{
@@ -1559,11 +1570,6 @@ footer{
        
     }
     
-    #get-in-touch{
-        margin-top:60px;
-       
-    }
-   
     .contact-container{
         padding:20px;
         max-width:280px;
