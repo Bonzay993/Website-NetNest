@@ -73,4 +73,4 @@ Ensuring the quality and correctness of the code is crucial for a robust and rel
 
 ### Test Cases
 
-For detailed test cases and steps to test the website, please refer to the [Test Cases](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/testcases.md).
+For detailed test cases and steps to test the website, please refer to the [Test Cases](https://github.com/Bonzay993/Website-NetNest/wiki/Test-Cases) Wiki.
