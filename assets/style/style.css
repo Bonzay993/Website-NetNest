@@ -559,9 +559,8 @@ footer{
 }
 
 .footer-email{
-    margin:15px;
-    margin-left:0;
-    padding:5px;
+    margin:15px 0px 15px 0px;
+    padding:5px 0 5px 0;
     border-radius: 5px;
     width:100%;
 }
@@ -674,6 +673,7 @@ footer{
     color:#201e1e;
     
     
+    
 }
 
 .contact-container-heading{
@@ -714,13 +714,18 @@ footer{
     display:block;
 }
 /* Form Action CSS*/
-#form-action{
-    height:800px;
-}
-
-.form-action-section{
-    position:relative;
-    top:30%;
+.form-action-container{
+    display:flex;
+    flex-flow:row wrap;
+    max-width:90%;
+    height:250px;
+    z-index:10;
+    position:absolute;
+    top:40%;
+    box-shadow: 0px 0px 12px #dfdddd ;
+    justify-content: space-between;
+    background-color:#fafafa;
+    border:1px solid #0635ce
 }
 
 .form-action-heading{
@@ -735,15 +740,6 @@ footer{
     flex-basis: 100%;
 }
 
-.form-action-container{
-    display:flex;
-    flex-flow:row wrap;
-    width:500px;
-    height:250px;
-    box-shadow: 0px 0px 12px #dfdddd ;
-    margin:0 auto;
-    justify-content: space-between;
-}
 
 .form-action-close-btn{
    margin-left: auto;
@@ -753,6 +749,12 @@ footer{
    color:#090613;
 }
 
+.form-action-go-back-btn{
+    margin:0 auto;
+    height:8%;
+    width:8%;
+    text-align: center;
+}
 .form-action-close-btn:hover{
    color:#777777;
 }
@@ -1267,7 +1269,7 @@ footer{
     }
 
     .hero-paragraph{
-        font-size: 80%;
+        font-size: 100%;
     }
 
     #reviews{
@@ -1409,6 +1411,11 @@ footer{
 
    .footer-col-1{
     max-width: 150px;
+    font-size: 85%;
+   }
+
+   .footer-col-2{
+    font-size:85%;
    }
 
    .checkbox-label{
@@ -1420,9 +1427,15 @@ footer{
     padding-bottom: 5px;
    }
 
+   .social-media-links{
+        
+   }
+
    .social-media-anchor{
     font-size: 150%;
    }
+
+   
 }
 
 /* 375 pixels and less*/

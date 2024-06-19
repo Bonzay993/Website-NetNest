@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
@@ -12,11 +12,11 @@
         rel="icon"
         href="./assets/img/icon2.ico"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
 <body>
     <header class="prevent-select">
-        <nav class="main-navigation main-page-padding">
+        <nav class="main-navigation main-page-padding"">
             <a href="index.html" class="logo">
                 <h2 class="logo-font"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg> NetNest</h2>
             </a>
@@ -47,7 +47,7 @@
                 <span class="bar bar2"></span>
                 <span class="bar bar3"></span>
             </div>  
-        
+            
             <div class="menu-items">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./index.html#reviews">Reviews</a></li>
@@ -58,16 +58,94 @@
         </div> 
     </header>
     
-    <main id="form-action">
-        <section class="form-action-section">
-            <div class="form-action-container">
-                <a class="form-action-close-btn" href="./contact.html"><i class="fa-solid fa-xmark" "></i></a>
-                <h1 class="form-action-heading">Message has been sent!</h1>
-                <p class="form-action-paragraph">We are aiming to respond back to your request within 24 hours</p>
+    <main id="main-contact">
+        <section id="contact-section">
+            <div class="contact-container">
+                <div class="form-action-container">
+                    <a class="form-action-close-btn" href="./contact.html"><i class="fa-solid fa-xmark" "></i></a>
+                    <h1 class="form-action-heading">Message has been sent!</h1>
+                    <p class="form-action-paragraph">We are aiming to respond back to your request within 24 hours</p>
+                    <a class="page-contact-sales-btn form-action-go-back-btn" href="./contact.html">
+                        Back
+                    </a>
+                </div>
+                <h1 class="contact-container-heading">Contact the team!</h1>
+                <p class="first-paragraph">Fill out the form below to get in touch with one of our team members. We will try to get back to you within 48 hours. If we do not reply within that time please feel free to use the form again.</p>
+                
+                <form class="contact-form" action="./formaction.html" method="get">
+                    <div class="form-group input">
+                        <label class="form-group-label" for="firstname">First name*</label>
+                        <input class="contact-form-input" type="text" name="firstname" id="firstname" required class="form-element" placeholder="John"/>
+                    </div>
+                    <div class="form-group input">
+                        <label class="form-group-label" for="lastname">Last name*</label>
+                        <input class="contact-form-input" type="text" name="lastname" id="lastname" required class="form-element" placeholder="Doe"/>
+                    </div>
+                    <div class="form-group input">
+                        <label class="form-group-label" for="email">Email address*</label>
+                        <input class="contact-form-input" type="email" name="email" id="email" required class="form-element" placeholder="John.doe@example.com"/>
+                    </div>
+                   
+                    <div class="form-group input">
+                        <label class="form-group-label" for="telephone">Phone Number*</label>
+                        <input class="contact-form-input" type="tel" name="telephone" id="telephone" required class="form-element" placeholder="+44 0123 456789"/>
+                    </div>
+                    <div class="form-group input">
+                        <label class="form-group-label" for="company">Company</label>
+                        <input class="contact-form-input" type="text" name="company" id="company" class="form-element" placeholder="John.doe@example.com"/>
+                    </div>
+                    <div class="form-group radio">
+                        <p class="form-group-paragraph">Choose Package:</p>
+                        <div class="form-group-radio1">
+                            <input type="radio" name="radio-button" id="premium" class="form-element">
+                            <label class="radio-label" for="premium">Premium</label>
+                        </div>
+                        <div class="form-group-radio2">
+                            <input type="radio" name="radio-button" id="business" class="form-element">
+                            <label class="radio-label" for="business">Business</label>
+                        </div>
+                        <div class="form-group-radio3">
+                            <input type="radio" name="radio-button" id="Cloud Startup" class="form-element" required>
+                            <label class="radio-label" for="Cloud Startup">Cloud Startup</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What are you looking for?</label><br>
+                        <textarea class="text-area" name="message" id="message" class="form-element" placeholder="I would like this hosting package...."></textarea>
+                    </div>
+                    <div class="submit-group">
+                        <div class="g-recaptcha" data-sitekey="6LdufvkpAAAAAHcW5TqD6ur_SRo0qPqF2ES_xFjN"></div>
+                        <br/>
+                        <input class="contact-form-btn" type="submit" value="SEND MESSAGE"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="get-in-touch">
+            <div class="get-in-touch-container">
+                <div class="get-in-touch-address get-in-touch-element">
+                    <i class="fa-solid fa-location-dot get-in-touch-icon"></i>
+                </br>
+                    <h1 class="address-heading get-in-touch-heading"">Address</h1>
+                    <p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road
+                        LIVERPOOL
+                        L50 6LI</p>
+                </div>
+                <div class="get-in-touch-email get-in-touch-element">
+                    <i class="fa-solid fa-square-envelope get-in-touch-icon"></i>
+                </br>
+                    <h1 class="email-heading get-in-touch-heading">Email</h1>
+                    <p class="email-paragraph get-in-touch-paragraph">support@netnest.co.uk</p>
+                </div>
+                <div class="get-in-touch-telephone get-in-touch-element">
+                    <i class="fa-solid fa-phone get-in-touch-icon"></i>
+                </br>
+                    <h1 class="telephone-heading get-in-touch-heading"">Telephone</h1>
+                    <p class="telephone-paragraph get-in-touch-paragraph">+44 0213652300 (Mon-Fri 09:00-17:00)</p>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer-container prevent-select">
              <div class="footer-col-1">
@@ -88,7 +166,7 @@
                 <a class="footer-anchor" href="./help.html">Help</a>
             </div>
              <div class="social-media-links">
-                 <h2 class="social-media-heading">FOLLOW US</h2>
+                 <h2 class="social-media-heading">Follow us</h2>
                  <a class="footer-anchor social-media-anchor" href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
                  <a class="footer-anchor social-media-anchor" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
                  <a class="footer-anchor social-media-anchor" href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
@@ -100,5 +178,11 @@
              </div>
         </div>
      </footer>
+ 
      <script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
+    
 </body>
+</html>
+
+
+
