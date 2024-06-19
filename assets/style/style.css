@@ -693,7 +693,7 @@ footer{
     padding-bottom:25px; 
     display:flex;
     flex-flow: row wrap;
-    gap:5px;
+    gap:2px;
 }  
     
 .form-group-label{
@@ -817,7 +817,7 @@ footer{
     display:flex;
     justify-content: center;
     height:10rem;
-    margin-top: 200px;
+    margin-top: 220px;
 }
 
 .get-in-touch-container{
@@ -1390,7 +1390,7 @@ footer{
    }
    .contact-container{
         padding:18px;
-        width:90%;
+        width:80%;
    }
    .contact-form-btn{
     font-size: 70%;
@@ -1400,7 +1400,7 @@ footer{
    }
 
    #get-in-touch{
-    margin-top: 44px;
+    margin-top: 55px;
    }
    
    .footer-container{
