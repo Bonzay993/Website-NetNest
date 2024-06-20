@@ -714,7 +714,7 @@ footer{
 .form-action-container{
     display:flex;
     flex-flow:row wrap;
-    max-width:90%;
+    max-width:50%;
     height:250px;
     z-index:10;
     position:absolute;
@@ -722,7 +722,8 @@ footer{
     box-shadow: 0px 0px 12px #dfdddd ;
     justify-content: space-between;
     background-color:#fafafa;
-    border:1px solid #0635ce
+    border:1px solid #0635ce;
+    padding:0px 10px 0px 10px;
 }
 
 .form-action-heading{
@@ -747,8 +748,8 @@ footer{
 
 .form-action-go-back-btn{
     margin:0 auto;
-    height:8%;
-    width:8%;
+    height:6%;
+    width:20%;
     text-align: center;
 }
 .form-action-close-btn:hover{
@@ -1288,6 +1289,15 @@ footer{
 
     #get-in-touch{
         margin-top:0px;
+    }
+
+    .form-action-container{
+     max-width:80%;
+     
+    }
+
+    .form-action-heading{
+        font-size: 130%;
     }
 
 }
