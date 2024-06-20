@@ -8,16 +8,13 @@
     <meta http-equiv='pragma' content='no-cache'>
     <link href="./assets/style/style.css" rel="stylesheet" type="text/css">
     <title>Contact Sales</title>
-    <link
-        rel="icon"
-        href="./assets/img/icon2.ico"
-    />
+    <link rel="icon" href="./assets/img/icon2.ico"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!--Header starts-->
     <header class="prevent-select">
-        <nav class="main-navigation main-page-padding"">
+        <nav class="main-navigation main-page-padding">
             <a href="index.html" class="logo">
                 <h2 class="logo-font"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg> NetNest</h2>
             </a>
@@ -43,19 +40,19 @@
         </nav>
         <!--Hamburger menu-->
         <div class="menu-hamburger hamburger-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox"/>
             <div class="hamburger-lines">
                 <span class="bar bar1"></span>
                 <span class="bar bar2"></span>
                 <span class="bar bar3"></span>
             </div>  
-            <div class="menu-items">
+            <ul class="menu-items">
                 <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html">Home</a></li>
                 <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#reviews">Reviews</a></li>
                 <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#pricing-cards">Pricing</a></li>
                 <li class="menu-items-links"><a class="menu-items-anchor" href="./contact.html">Contact Sales</a></li>
                 <li class="menu-items-links"><a class="menu-items-anchor" href="./help.html">Help</a></li>
-            </div>
+            </ul>
         </div> 
     </header>
     <!--Contact Section Starts-->
@@ -67,47 +64,47 @@
                 <form class="contact-form" action="./formaction.html" method="get">
                     <div class="form-group input">
                         <label class="form-group-label" for="firstname">First name*</label>
-                        <input class="contact-form-input" type="text" name="firstname" id="firstname" required class="form-element" placeholder="John"/>
+                        <input class="contact-form-input" type="text" name="firstname" id="firstname" required placeholder="John">
                     </div>
                     <div class="form-group input">
                         <label class="form-group-label" for="lastname">Last name*</label>
-                        <input class="contact-form-input" type="text" name="lastname" id="lastname" required class="form-element" placeholder="Doe"/>
+                        <input class="contact-form-input" type="text" name="lastname" id="lastname" required placeholder="Doe">
                     </div>
                     <div class="form-group input">
                         <label class="form-group-label" for="email">Email address*</label>
-                        <input class="contact-form-input" type="email" name="email" id="email" required class="form-element" placeholder="John.doe@example.com"/>
+                        <input class="contact-form-input" type="email" name="email" id="email" required placeholder="John.doe@example.com">
                     </div>
                     <div class="form-group input">
                         <label class="form-group-label" for="telephone">Phone Number*</label>
-                        <input class="contact-form-input" type="tel" name="telephone" id="telephone" required class="form-element" placeholder="+44 0123 456789"/>
+                        <input class="contact-form-input" type="tel" name="telephone" id="telephone" required placeholder="+44 0123 456789">
                     </div>
                     <div class="form-group input">
                         <label class="form-group-label" for="company">Company</label>
-                        <input class="contact-form-input" type="text" name="company" id="company" class="form-element" placeholder="John.doe@example.com"/>
+                        <input class="contact-form-input" type="text" name="company" id="company" placeholder="John.doe@example.com">
                     </div>
                     <div class="form-group radio">
                         <p class="form-group-paragraph">Choose Package:</p>
                         <div class="form-group-radio1">
-                            <input type="radio" name="radio-button" id="premium" class="form-element">
+                            <input type="radio" name="radio-button" id="premium">
                             <label class="radio-label" for="premium">Premium</label>
                         </div>
                         <div class="form-group-radio2">
-                            <input type="radio" name="radio-button" id="business" class="form-element">
+                            <input type="radio" name="radio-button" id="business">
                             <label class="radio-label" for="business">Business</label>
                         </div>
                         <div class="form-group-radio3">
-                            <input type="radio" name="radio-button" id="Cloud Startup" class="form-element" required>
-                            <label class="radio-label" for="Cloud Startup">Cloud Startup</label>
+                            <input type="radio" name="radio-button" id="cloud-startup" required>
+                            <label class="radio-label" for="cloud-startup">Cloud Startup</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="message">What are you looking for?</label><br>
-                        <textarea class="text-area" name="message" id="message" class="form-element" placeholder="I would like this hosting package...."></textarea>
+                        <textarea class="text-area" name="message" id="message" placeholder="I would like this hosting package...."></textarea>
                     </div>
                     <div class="submit-group">
                         <div class="g-recaptcha" data-sitekey="6LdufvkpAAAAAHcW5TqD6ur_SRo0qPqF2ES_xFjN"></div>
-                        <br/>
-                        <input class="contact-form-btn" type="submit" value="SEND MESSAGE"/>
+                        <br>
+                        <input class="contact-form-btn" type="submit" value="Send Message">
                     </div>
                 </form>
             </div>
@@ -118,10 +115,8 @@
                 <div class="get-in-touch-address get-in-touch-element">
                     <i class="fa-solid fa-location-dot get-in-touch-icon"></i>
                 </br>
-                    <h1 class="address-heading get-in-touch-heading"">Address</h1>
-                    <p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road
-                        LIVERPOOL
-                        L50 6LI</p>
+                    <h1 class="address-heading get-in-touch-heading">Address</h1>
+                    <p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road LIVERPOOL L50 6LI</p>
                 </div>
                 <div class="get-in-touch-email get-in-touch-element">
                     <i class="fa-solid fa-square-envelope get-in-touch-icon"></i>
@@ -132,7 +127,7 @@
                 <div class="get-in-touch-telephone get-in-touch-element">
                     <i class="fa-solid fa-phone get-in-touch-icon"></i>
                 </br>
-                    <h1 class="telephone-heading get-in-touch-heading"">Telephone</h1>
+                    <h1 class="telephone-heading get-in-touch-heading">Telephone</h1>
                     <p class="telephone-paragraph get-in-touch-paragraph">+44 0213652300 (Mon-Fri 09:00-17:00)</p>
                 </div>
             </div>
@@ -145,8 +140,8 @@
                  <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
                  <form class="footer-form">
                      <label for="email">Subscribe to NetNest Communications</label>
-                     <input type="email" id="email" name="email" class="email footer-email"><br>
-                     <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">
+                     <input type="email" id="footer-email" name="footer-email" class="email footer-email"><br>
+                     <input type="checkbox" id="footer-checkbox" name="footer-checkbox" class="checkbox">
                      <label for="checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label><br>
                      <input type="submit" value="Submit" class="footer-submit">
                  </form>
