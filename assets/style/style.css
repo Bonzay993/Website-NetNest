@@ -497,7 +497,6 @@ header{
 }
 
 /* GET-STARTED SECTIONS */
-
 #get-started{
     display:flex;
     width:100%;
@@ -781,7 +780,6 @@ footer{
     color:#fafafa;
     transition: 0.4s;
     cursor: pointer;
-
 }    
 
 .contact-form-btn:hover{
@@ -922,7 +920,6 @@ footer{
     margin-bottom:110px;
 }
 
-
 /* MEDIA QUERIES */
 /* 1200 pixels and less*/
 @media screen and (max-width:1200px) {
@@ -1061,7 +1058,6 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         top:25px;
-    
     }
       
     .bar {
@@ -1258,6 +1254,7 @@ footer{
     .hero-text{
         padding-right: 20px;
     }
+    
     .hero-heading{
         font-size: 200%;
     }
@@ -1293,7 +1290,6 @@ footer{
 
     .form-action-container{
      max-width:80%;
-     
     }
 
     .form-action-heading{
