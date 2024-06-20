@@ -246,7 +246,7 @@ header{
     background-color: #eaeef54d;
     flex-flow: row wrap;
     padding-bottom:60px;
-    height:60rem;
+    height:58rem;
 }
 
 .pricing-cards-container{
@@ -265,6 +265,7 @@ header{
     flex-basis:100%;
     align-content: center; 
     height:10%;
+    margin-top:100px;
 }
 
 .pricing-card{
@@ -670,9 +671,6 @@ footer{
     padding:40px;
     box-sizing: border-box;
     color:#201e1e;
-    
-    
-    
 }
 
 .contact-container-heading{
@@ -772,16 +770,16 @@ footer{
 
 /* Styling the Send Message button */
 .contact-form-btn{
-        appearance: none;
-        border:none;
-        outline:none;
-        background: none;
-        padding:10px;
-        border-radius: 10px;
-        background-color: #103c75;
-        color:#fafafa;
-        transition: 0.4s;
-        cursor: pointer;
+    appearance: none;
+    border:none;
+    outline:none;
+    background: none;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #103c75;
+    color:#fafafa;
+    transition: 0.4s;
+    cursor: pointer;
 
 }    
 
@@ -1133,6 +1131,7 @@ footer{
     .pricing-cards-heading{
         padding-top:0;
         align-content: center;
+
     }
         
     .pricing-card {
@@ -1186,7 +1185,6 @@ footer{
     .reviews-box-content{
         padding:14px;
     }
-
 
     #get-in-touch{
         height: 26rem;
@@ -1324,11 +1322,6 @@ footer{
         height:2050px;
     }  
         
-    .pricing-cards-heading{
-        padding-bottom:50px;
-        padding-top:50px;
-    }
-
     .pricing-cards-container{
         gap:50px;
         justify-content: center;
@@ -1425,15 +1418,9 @@ footer{
     padding-bottom: 5px;
    }
 
-   .social-media-links{
-        
-   }
-
    .social-media-anchor{
     font-size: 150%;
    }
-
-   
 }
 
 /* 375 pixels and less*/
@@ -1614,12 +1601,7 @@ footer{
     .get-started-paragraph{
         font-size: 80%;
     }
-    
-    .get-started-btn .btn{
-        padding:8px;
-        font-size: 80%;
-    }
-
+ 
     .footer-col-1{
         max-width: 110px;
     }
