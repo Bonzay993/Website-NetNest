@@ -465,7 +465,6 @@ header{
 }
 
 .reviews-box{
-    flex-basis:1;
     background-color: #fcf6f6;
     width:350px;
     height:350px;
@@ -480,18 +479,15 @@ header{
     justify-content: space-between;
 }
 .reviews-box-heading{
-    flex-basis:1;
-    color:#150b38;
+    color:#150b38; /* Trustpilot color */
 }
 
 .reviews-box-paragraph{
-    flex-basis:1;
     align-content:center;
 }
 
-.five-stars{
-    flex-basis:1;
-    align-content: bottom;
+/*5 Star review */
+.five-stars{ 
     color:rgb(3, 165, 3);
     font-size: 110%;
 }
@@ -539,7 +535,6 @@ footer{
     color:#fafafa;
     gap:20px;
     justify-content: space-between;
-    align-items: top;
     flex-flow: row wrap;
     padding-top:50px;
     margin:0 auto;
@@ -556,13 +551,15 @@ footer{
 
 .footer-form{
     display:block;
+    
 }
 
 .footer-email{
     margin:15px 0px 15px 0px;
-    padding:5px 0 5px 0;
+    padding:5px 5px 5px 5px;
     border-radius: 5px;
-    width:100%;
+    width:96%;
+    
 }
 
 .checkbox-label{
@@ -1607,6 +1604,10 @@ footer{
         max-width: 110px;
     }
 
+    .footer-email{
+        font-size:85% /* footer email placeholder font */
+    }
+
     .footer-container{
         padding:12px;
     }    
@@ -1678,6 +1679,7 @@ footer{
 
     .footer-email{
         height:8px;
+        font-size: 65%;/*footer email placeholder font */
     }
 
     .reviews-box-paragraph{
