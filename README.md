@@ -82,6 +82,6 @@ For detailed test cases and steps to test the website, please refer to the [Test
 
 ### 8.3 Fixed Bugs
 
-For detailed changes and fixes, please refer to the [Releases Page](https://github.com/Bonzay993/Website-NetNest/releases)
+For detailed changes and fixes, please refer to the latest [Releases Page](https://github.com/Bonzay993/Website-NetNest/releases)
 
 ### 8.4 Supported screens and browsers
