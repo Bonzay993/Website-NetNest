@@ -70,6 +70,11 @@ Ensuring the quality and correctness of the code is crucial for a robust and rel
 - **W3C CSS Validator:** The CSS code has been validated using the W3C CSS Validator to ensure it meets the standards and is error-free.
   - [Validate CSS](https://jigsaw.w3.org/css-validator/)
 
+#### Ligthouse Report
+
+![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report1.png)
+![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report2.png)
+
 
 ### Test Cases
 
