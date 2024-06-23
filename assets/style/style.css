@@ -305,6 +305,10 @@ header {
 	font-size: 160%;
 }
 
+.pricing-card-benefits {
+	color:#090613;
+}
+
 .card2 {
 	border: 3px solid #7371e5;
 }
@@ -343,22 +347,19 @@ header {
 	border-radius: 20px;
 	background-color: #b4b3e9;
 	margin-left: 5px;
-	color: #0635ce;
+	color:#090613;
 }
 
 .save-cut-amount {
-	font-weight: 300;
+	font-weight: 500;
+	color:#424141;
+	font-size:110%;
 }
 
 .final-price {
 	font-size: 300%;
 	font-weight: bold;
 	color: #103c75;
-}
-
-.card2-save-percentage {
-	background-color: #fac7c7;
-	color: #d12e2e
 }
 
 .price {
@@ -399,8 +400,8 @@ header {
 .card-checkmarks-symbol {
 	/*checkmark symbol */
 	color: #05631b;
-	;
 	font-weight: bold;
+	font-size: 120%;
 }
 
 /* Make the contact sales btn stay at the bottom of the cards*/
@@ -507,6 +508,7 @@ header {
 
 .reviews-box-paragraph {
 	align-content: center;
+	color:#090613;
 }
 
 /*5 Star review */
