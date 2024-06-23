@@ -56,9 +56,9 @@ Wireframes for the website can be found in the `wireframes` directory of this re
 - **JavaScript:** Adds interactivity and dynamic content to the Help section of the website.
 - **Font Awesome:** Provides scalable vector icons that can be customized with CSS.
 
-## Testing
+## 8. Testing
 
-### Code Validation
+### 8.1 Code Validation
 
 Ensuring the quality and correctness of the code is crucial for a robust and reliable website. The HTML and CSS code for the NetNest Website has been validated using the W3C validation services.
 
@@ -76,6 +76,12 @@ Ensuring the quality and correctness of the code is crucial for a robust and rel
 ![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report2.png)
 
 
-### Test Cases
+### 8.2 Test Cases
 
 For detailed test cases and steps to test the website, please refer to the [Test Cases](https://github.com/Bonzay993/Website-NetNest/wiki/Test-Cases) Wiki.
+
+### 8.3 Fixed Bugs
+
+For detailed changes and fixes, please refer to the [Releases Page](https://github.com/Bonzay993/Website-NetNest/releases)
+
+### 8.4 Supported screens and browsers
