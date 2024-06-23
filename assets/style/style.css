@@ -580,7 +580,7 @@ footer {
 	margin: 15px 0px 15px 0px;
 	padding: 5px 5px 5px 5px;
 	border-radius: 5px;
-	width: 90%;
+	width: 96%;
 	font-size: 85%; /* footer email placeholder font */
 }
 
@@ -1698,8 +1698,12 @@ footer {
 		font-size: 60%;
 	}
 
+	.footer-email {
+		width:90%;
+	}
+
 	.email-label {
-		font-size: 80%;
+		font-size: 82%;
 	}
 
 	.checkbox-label {
