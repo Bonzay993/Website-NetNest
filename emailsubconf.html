@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.22">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/style/style.css" rel="stylesheet" type="text/css">
-    <title>Contact Sales</title>
+    <title>Frequently Asked Questions</title>
     <link rel="icon" href="./assets/img/icon2.ico">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!--Header starts-->
@@ -35,8 +34,8 @@
                 </li>
             </ul>
         </nav>
-        <!--Hamburger menu-->
-        <div class="menu-hamburger hamburger-container">
+         <!--Hamburger menu-->
+         <div class="menu-hamburger hamburger-container">
             <input class="checkbox" type="checkbox">
             <div class="hamburger-lines">
                 <span class="bar bar1"></span>
@@ -52,85 +51,32 @@
             </ul>
         </div> 
     </header>
-    <!--Contact Section Starts-->
-    <main id="main-contact">
-        <section id="contact-section">
-            <div class="contact-container">
-                <h1 class="contact-container-heading">Contact the team!</h1>
-                <p class="first-paragraph">Fill out the form below to get in touch with one of our team members. We will try to get back to you within 48 hours. If we do not reply within that time please feel free to use the form again.</p>
-                <form class="contact-form" action="./formaction.html" method="get">
-                    <div class="form-group input">
-                        <label class="form-group-label" for="firstname">First name*</label>
-                        <input class="contact-form-input" type="text" name="firstname" id="firstname" required placeholder="John">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="lastname">Last name*</label>
-                        <input class="contact-form-input" type="text" name="lastname" id="lastname" required placeholder="Doe">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="email">Email address*</label>
-                        <input class="contact-form-input" type="email" name="email" id="email" required placeholder="John.doe@example.com">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="telephone">Phone Number*</label>
-                        <input class="contact-form-input" type="tel" name="telephone" id="telephone" required placeholder="+44 0123 456789">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="company">Company</label>
-                        <input class="contact-form-input" type="text" name="company" id="company" placeholder="John.doe@example.com">
-                    </div>
-                    <div class="form-group radio">
-                        <p class="form-group-paragraph">Choose Package:</p>
-                        <div class="form-group-radio1">
-                            <input type="radio" name="radio-button" id="premium">
-                            <label class="radio-label" for="premium">Premium</label>
-                        </div>
-                        <div class="form-group-radio2">
-                            <input type="radio" name="radio-button" id="business">
-                            <label class="radio-label" for="business">Business</label>
-                        </div>
-                        <div class="form-group-radio3">
-                            <input type="radio" name="radio-button" id="cloud-startup" required>
-                            <label class="radio-label" for="cloud-startup">Cloud Startup</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">What are you looking for?</label><br>
-                        <textarea class="text-area" name="message" id="message" placeholder="I would like this hosting package...."></textarea>
-                    </div>
-                    <div class="submit-group">
-                        <div class="g-recaptcha" data-sitekey="6LdufvkpAAAAAHcW5TqD6ur_SRo0qPqF2ES_xFjN"></div>
-                        <br>
-                        <input class="contact-form-btn" type="submit" value="Send Message">
-                    </div>
-                </form>
+    <main>
+        <section id="subscribe-conf">
+            <div class="subscribe-conf-container">
+                <p class="subscribe-conf-paragraph">Thank you</p>
+                <br>
+                <h1 class="subscribe-conf-heading"> We look forward to <span class="subscribe-conf-heading-span">connecting</span> with you</h1>
+                <br>
+                <img class="smiling-cloud" src="./assets/img/output-onlinepngtools.png" alt="Smiling cloud">
             </div>
         </section>
-        <!--Get in touch section-->
-        <section id="get-in-touch">
-            <div class="get-in-touch-container">
-                <div class="get-in-touch-address get-in-touch-element">
-                    <i class="fa-solid fa-location-dot get-in-touch-icon"></i>
-                <br>
-                    <h1 class="address-heading get-in-touch-heading">Address</h1>
-                    <p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road LIVERPOOL L50 6LI</p>
+        <!--Get Started Section-->
+        <section id="get-started">
+            <div class="get-started-container prevent-select">
+                <div class="get-started-text">
+                    <h1 class="get-started-heading">Ready to get started?</h1>
+                    <p class="get-started-paragraph">Contact sales today!</p>
                 </div>
-                <div class="get-in-touch-email get-in-touch-element">
-                    <i class="fa-solid fa-square-envelope get-in-touch-icon"></i>
-                <br>
-                    <h1 class="email-heading get-in-touch-heading">Email</h1>
-                    <p class="email-paragraph get-in-touch-paragraph">support@netnest.co.uk</p>
-                </div>
-                <div class="get-in-touch-telephone get-in-touch-element">
-                    <i class="fa-solid fa-phone get-in-touch-icon"></i>
-                <br>
-                    <h1 class="telephone-heading get-in-touch-heading">Telephone</h1>
-                    <p class="telephone-paragraph get-in-touch-paragraph">+44 0213652300 (Mon-Fri 09:00-17:00)</p>
+                <div class="page-contact-sales">
+                    <a class="page-contact-sales-btn" href="./contact.html">
+                        Contact Sales
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-    <!--Footer-->
+    <!--Footer Starts-->
     <footer>
         <div class="footer-container prevent-select">
             <div class="footer-col-1">
@@ -164,5 +110,5 @@
         </div>
      </footer>
      <script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
-</body>
-</html>
+ </body>
+ </html>
