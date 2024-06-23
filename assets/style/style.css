@@ -1102,7 +1102,7 @@ footer {
 	}
 
 	/* Making the hamburger */
-	.checkbox {
+	.hamburger-checkbox {
 		position: absolute;
 		display: block;
 		height: 32px;
@@ -1192,7 +1192,6 @@ footer {
 	.pricing-cards-heading {
 		padding-top: 0;
 		align-content: center;
-
 	}
 
 	.pricing-card {
