@@ -943,7 +943,42 @@ footer {
 .faq-last {
 	margin-bottom: 110px;
 }
+/*The page that displays after email subscribing in the footer*/
+#subscribe-conf {
+	height:900px;
+	background-color:#e2e9f0cc;
+	margin-top:80px;
+}
 
+.subscribe-conf-container {
+	height:90%;
+	display:flex;
+	justify-content:center;
+	align-content: center;
+	padding-top: 100px;
+	flex-flow:column wrap;
+	padding:20px;
+}
+
+.subscribe-conf-paragraph {
+	text-transform: uppercase;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.subscribe-conf-heading {
+	color:#0e2431;
+	font-size: 260%;
+}
+
+.subscribe-conf-heading-span {
+	color:#103c75;
+}
+
+.smiling-cloud{
+	max-width: 300px;
+	align-self: center;
+}
 /* MEDIA QUERIES */
 /* 1200 pixels and less*/
 @media screen and (max-width:1200px) {
@@ -1407,6 +1442,10 @@ footer {
 		height: 200px;
 	}
 
+	.get-started-container {
+		padding: 16px;
+	}
+
 	.help-wrapper {
 		max-height: 3000px;
 	}
@@ -1459,6 +1498,11 @@ footer {
 	.social-media-anchor {
 		font-size: 150%;
 	}
+
+	#subscribe-conf {
+		height: 750px;
+	}
+
 }
 
 /* 375 pixels and less*/
