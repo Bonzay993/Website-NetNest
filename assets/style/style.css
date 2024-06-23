@@ -574,15 +574,14 @@ footer {
 
 .footer-form {
 	display: block;
-
 }
 
 .footer-email {
 	margin: 15px 0px 15px 0px;
 	padding: 5px 5px 5px 5px;
 	border-radius: 5px;
-	width: 96%;
-
+	width: 90%;
+	font-size: 85%; /* footer email placeholder font */
 }
 
 .checkbox-label {
@@ -1584,7 +1583,7 @@ footer {
 		height: 20px;
 	}
 
-	.checkbox {
+	.hamburger-checkbox {
 		right: 5px;
 	}
 
@@ -1687,11 +1686,6 @@ footer {
 		max-width: 110px;
 	}
 
-	.footer-email {
-		font-size: 85%
-			/* footer email placeholder font */
-	}
-
 	.footer-container {
 		padding: 12px;
 	}
@@ -1717,6 +1711,10 @@ footer {
 	}
 
 	.social-media-heading {
+		font-size: 100%;
+	}
+
+	.footer-col2-heading {
 		font-size: 100%;
 	}
 
@@ -1761,12 +1759,6 @@ footer {
 
 	.footer-anchor {
 		font-size: 80%;
-	}
-
-	.footer-email {
-		height: 8px;
-		font-size: 65%;
-		/*footer email placeholder font */
 	}
 
 	.reviews-box-paragraph {
