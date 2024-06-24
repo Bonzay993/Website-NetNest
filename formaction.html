@@ -1,179 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link href="./assets/style/style.css" rel="stylesheet" type="text/css">
-    <title>Contact Sales</title>
-    <link rel="icon" href="./assets/img/icon-dark-blue.ico">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
-<body>
-    <!--Header Starts-->
-    <header class="prevent-select">
-        <nav class="main-navigation main-page-padding">
-            <a href="index.html" class="logo">
-                <h2 class="logo-font"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg> NetNest</h2>
-            </a>
-            <ul class="menu-left menu-hidden">
-                <li class="menu-left-element">
-                    <a class="home menu-anchor" href="./index.html">Home</a>
-                </li>
-                <li class="menu-left-element">
-                    <a class="menu-anchor" href="./index.html#reviews">Reviews</a>
-                </li>
-                <li class="menu-left-element">
-                    <a class="menu-anchor" href="./index.html#pricing-cards">Pricing</a>
-                </li>
-            </ul>
-            <ul class="menu-right menu-hidden">
-                <li class="menu-right-element">
-                    <a class="menu-anchor" href="./help.html">Help</a>
-                </li>
-                <li class="menu-right-element contact-sales">
-                    <a class="menu-anchor contact-sales-anchor" href="./contact.html">Contact Sales</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Hamburger menu-->
-        <div class="menu-hamburger hamburger-container">
-            <input class="hamburger-checkbox" type="checkbox">
-            <div class="hamburger-lines">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-            </div>  
-            <ul class="menu-items">
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html">Home</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#reviews">Reviews</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#pricing-cards">Pricing</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./contact.html">Contact Sales</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./help.html">Help</a></li>
-            </ul>
-        </div> 
-    </header>
-    <!--Contact Section-->
-    <main id="main-contact">
-        <section id="contact-section">
-            <div class="contact-container">
-                <div class="form-action-container">
-                    <a class="form-action-close-btn" href="./contact.html"><i class="fa-solid fa-xmark"></i></a>
-                    <h1 class="form-action-heading">Message has been sent!</h1>
-                    <p class="form-action-paragraph">We are aiming to respond back to your request within 24 hours</p>
-                    <a class="page-contact-sales-btn form-action-go-back-btn" href="./contact.html">
-                        Back
-                    </a>
-                </div>
-                <h1 class="contact-container-heading">Contact the team!</h1>
-                <p class="first-paragraph">Fill out the form below to get in touch with one of our team members. We will try to get back to you within 48 hours. If we do not reply within that time please feel free to use the form again.</p>
-                <form class="contact-form" action="./formaction.html" method="get">
-                    <div class="form-group input">
-                        <label class="form-group-label" for="firstname">First name*</label>
-                        <input class="contact-form-input" type="text" name="firstname" id="firstname" required placeholder="John">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="lastname">Last name*</label>
-                        <input class="contact-form-input" type="text" name="lastname" id="lastname" required placeholder="Doe">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="email">Email address*</label>
-                        <input class="contact-form-input" type="email" name="email" id="email" required placeholder="John.doe@example.com">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="telephone">Phone Number*</label>
-                        <input class="contact-form-input" type="tel" name="telephone" id="telephone" required placeholder="+44 0123 456789">
-                    </div>
-                    <div class="form-group input">
-                        <label class="form-group-label" for="company">Company</label>
-                        <input class="contact-form-input" type="text" name="company" id="company" placeholder="John.doe@example.com">
-                    </div>
-                    <div class="form-group radio">
-                        <p class="form-group-paragraph">Choose Package:</p>
-                        <div class="form-group-radio1">
-                            <input type="radio" name="radio-button" id="premium">
-                            <label class="radio-label" for="premium">Premium</label>
-                        </div>
-                        <div class="form-group-radio2">
-                            <input type="radio" name="radio-button" id="business">
-                            <label class="radio-label" for="business">Business</label>
-                        </div>
-                        <div class="form-group-radio3">
-                            <input type="radio" name="radio-button" id="cloud-startup" required>
-                            <label class="radio-label" for="cloud-startup">Cloud Startup</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">What are you looking for?</label><br>
-                        <textarea class="text-area" name="message" id="message" placeholder="I would like this hosting package...."></textarea>
-                    </div>
-                    <div class="submit-group">
-                        <div class="g-recaptcha" data-sitekey="6LdufvkpAAAAAHcW5TqD6ur_SRo0qPqF2ES_xFjN"></div>
-                        <br>
-                        <input class="contact-form-btn" type="submit" value="Send Message">
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!--Get in touch section-->
-        <section id="get-in-touch">
-            <div class="get-in-touch-container">
-                <div class="get-in-touch-address get-in-touch-element">
-                    <i class="fa-solid fa-location-dot get-in-touch-icon"></i>
-                <br>
-                    <h1 class="address-heading get-in-touch-heading">Address</h1>
-                    <p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road LIVERPOOL L50 6LI</p>
-                </div>
-                <div class="get-in-touch-email get-in-touch-element">
-                    <i class="fa-solid fa-square-envelope get-in-touch-icon"></i>
-                <br>
-                    <h1 class="email-heading get-in-touch-heading">Email</h1>
-                    <p class="email-paragraph get-in-touch-paragraph">support@netnest.co.uk</p>
-                </div>
-                <div class="get-in-touch-telephone get-in-touch-element">
-                    <i class="fa-solid fa-phone get-in-touch-icon"></i>
-                <br>
-                    <h1 class="telephone-heading get-in-touch-heading">Telephone</h1>
-                    <p class="telephone-paragraph get-in-touch-paragraph">+44 0213652300 (Mon-Fri 09:00-17:00)</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!--Footer starts-->
-    <footer>
-        <div class="footer-container prevent-select">
-            <div class="footer-col-1">
-                <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
-                <form class="footer-form" action="./emailsubconf.html" method="get">
-                    <label for="footer-email" class="email-label">Subscribe to NetNest Communications</label>
-                    <input type="email" id="footer-email" name="footer-email" class="email footer-email" placeholder="Email*" required><br>
-                    <input type="checkbox" id="footer-checkbox" name="footer-checkbox" class="checkbox">
-                    <label for="footer-checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label><br>
-                    <input type="submit" value="Submit" class="footer-submit">
-                </form>
-            </div>
-             <div class="footer-col-2">
-                <h2 class="footer-anchor footer-col2-heading">Useful Links</h2>
-                <a class="footer-anchor" href="./contact.html">Contact</a>
-                <a class="footer-anchor" href="./index.html#pricing-cards">Pricing</a>
-                <a class="footer-anchor" href="./index.html#reviews">Reviews</a>
-                <a class="footer-anchor" href="./help.html">Help</a>
-            </div>
-             <div class="social-media-links">
-                 <h2 class="social-media-heading">Follow us</h2>
-                 <a class="footer-anchor social-media-anchor" href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
-             </div>
-             <div class="copyright">
-                 <hr class="break-line">
-                 <p class="copyright-paragraph">@2024 NetNest - United Kingdom</p>
-             </div>
-        </div>
-     </footer>
-     <script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<link href="./assets/style/style.css" rel="stylesheet" type="text/css">
+		<title>Contact Sales</title>
+		<link rel="icon" href="./assets/img/icon-dark-blue.ico">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
+	<body>
+		<!--Header Starts-->
+		<header class="prevent-select">
+			<nav class="main-navigation main-page-padding">
+				<a href="index.html" class="logo">
+					<h2 class="logo-font">
+						<svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+							<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+							<path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z" />
+						</svg> NetNest
+					</h2>
+				</a>
+				<ul class="menu-left menu-hidden">
+					<li class="menu-left-element">
+						<a class="home menu-anchor" href="./index.html">Home</a>
+					</li>
+					<li class="menu-left-element">
+						<a class="menu-anchor" href="./index.html#reviews">Reviews</a>
+					</li>
+					<li class="menu-left-element">
+						<a class="menu-anchor" href="./index.html#pricing-cards">Pricing</a>
+					</li>
+				</ul>
+				<ul class="menu-right menu-hidden">
+					<li class="menu-right-element">
+						<a class="menu-anchor" href="./help.html">Help</a>
+					</li>
+					<li class="menu-right-element contact-sales">
+						<a class="menu-anchor contact-sales-anchor" href="./contact.html">Contact Sales</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Hamburger menu-->
+			<div class="menu-hamburger hamburger-container">
+				<input class="hamburger-checkbox" type="checkbox">
+				<div class="hamburger-lines">
+					<span class="bar bar1"></span>
+					<span class="bar bar2"></span>
+					<span class="bar bar3"></span>
+				</div>
+				<ul class="menu-items">
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html">Home</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html#reviews">Reviews</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html#pricing-cards">Pricing</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./contact.html">Contact Sales</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./help.html">Help</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Contact Section-->
+		<main id="main-contact">
+			<section id="contact-section">
+				<div class="contact-container">
+					<div class="form-action-container">
+						<a class="form-action-close-btn" href="./contact.html">
+							<i class="fa-solid fa-xmark"></i>
+						</a>
+						<h1 class="form-action-heading">Message has been sent!</h1>
+						<p class="form-action-paragraph">We are aiming to respond back to your request within 24 hours</p>
+						<a class="page-contact-sales-btn form-action-go-back-btn" href="./contact.html"> Back </a>
+					</div>
+					<h1 class="contact-container-heading">Contact the team!</h1>
+					<p class="first-paragraph">Fill out the form below to get in touch with one of our team members. We will try to get back to you within 48 hours. If we do not reply within that time please feel free to use the form again.</p>
+					<form class="contact-form" action="./formaction.html" method="get">
+						<div class="form-group input">
+							<label class="form-group-label" for="firstname">First name*</label>
+							<input class="contact-form-input" type="text" name="firstname" id="firstname" required placeholder="John">
+						</div>
+						<div class="form-group input">
+							<label class="form-group-label" for="lastname">Last name*</label>
+							<input class="contact-form-input" type="text" name="lastname" id="lastname" required placeholder="Doe">
+						</div>
+						<div class="form-group input">
+							<label class="form-group-label" for="email">Email address*</label>
+							<input class="contact-form-input" type="email" name="email" id="email" required placeholder="John.doe@example.com">
+						</div>
+						<div class="form-group input">
+							<label class="form-group-label" for="telephone">Phone Number*</label>
+							<input class="contact-form-input" type="tel" name="telephone" id="telephone" required placeholder="+44 0123 456789">
+						</div>
+						<div class="form-group input">
+							<label class="form-group-label" for="company">Company</label>
+							<input class="contact-form-input" type="text" name="company" id="company" placeholder="John.doe@example.com">
+						</div>
+						<div class="form-group radio">
+							<p class="form-group-paragraph">Choose Package:</p>
+							<div class="form-group-radio1">
+								<input type="radio" name="radio-button" id="premium">
+								<label class="radio-label" for="premium">Premium</label>
+							</div>
+							<div class="form-group-radio2">
+								<input type="radio" name="radio-button" id="business">
+								<label class="radio-label" for="business">Business</label>
+							</div>
+							<div class="form-group-radio3">
+								<input type="radio" name="radio-button" id="cloud-startup" required>
+								<label class="radio-label" for="cloud-startup">Cloud Startup</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="message">What are you looking for?</label>
+							<br>
+							<textarea class="text-area" name="message" id="message" placeholder="I would like this hosting package...."></textarea>
+						</div>
+						<div class="submit-group">
+							<div class="g-recaptcha" data-sitekey="6LdufvkpAAAAAHcW5TqD6ur_SRo0qPqF2ES_xFjN"></div>
+							<br>
+							<input class="contact-form-btn" type="submit" value="Send Message">
+						</div>
+					</form>
+				</div>
+			</section>
+			<!--Get in touch section-->
+			<section id="get-in-touch">
+				<div class="get-in-touch-container">
+					<div class="get-in-touch-address get-in-touch-element">
+						<i class="fa-solid fa-location-dot get-in-touch-icon"></i>
+						<br>
+						<h1 class="address-heading get-in-touch-heading">Address</h1>
+						<p class="address-paragraph get-in-touch-paragraph">NetNest Services LTD 210 Chester Road LIVERPOOL L50 6LI</p>
+					</div>
+					<div class="get-in-touch-email get-in-touch-element">
+						<i class="fa-solid fa-square-envelope get-in-touch-icon"></i>
+						<br>
+						<h1 class="email-heading get-in-touch-heading">Email</h1>
+						<p class="email-paragraph get-in-touch-paragraph">support@netnest.co.uk</p>
+					</div>
+					<div class="get-in-touch-telephone get-in-touch-element">
+						<i class="fa-solid fa-phone get-in-touch-icon"></i>
+						<br>
+						<h1 class="telephone-heading get-in-touch-heading">Telephone</h1>
+						<p class="telephone-paragraph get-in-touch-paragraph">+44 0213652300 (Mon-Fri 09:00-17:00)</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--Footer starts-->
+		<footer>
+			<div class="footer-container prevent-select">
+				<div class="footer-col-1">
+					<h2>
+						<i class="fa-solid fa-network-wired"></i> NetNest
+					</h2>
+					<form class="footer-form" action="./emailsubconf.html" method="get">
+						<label for="footer-email" class="email-label">Subscribe to NetNest Communications</label>
+						<input type="email" id="footer-email" name="footer-email" class="email footer-email" placeholder="Email*" required>
+						<br>
+						<input type="checkbox" id="footer-checkbox" name="footer-checkbox" class="checkbox">
+						<label for="footer-checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label>
+						<br>
+						<input type="submit" value="Submit" class="footer-submit">
+					</form>
+				</div>
+				<div class="footer-col-2">
+					<h2 class="footer-anchor footer-col2-heading">Useful Links</h2>
+					<a class="footer-anchor" href="./contact.html">Contact</a>
+					<a class="footer-anchor" href="./index.html#pricing-cards">Pricing</a>
+					<a class="footer-anchor" href="./index.html#reviews">Reviews</a>
+					<a class="footer-anchor" href="./help.html">Help</a>
+				</div>
+				<div class="social-media-links">
+					<h2 class="social-media-heading">Follow us</h2>
+					<a class="footer-anchor social-media-anchor" href="https://facebook.com">
+						<i class="fa-brands fa-square-facebook"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://instagram.com">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://youtube.com">
+						<i class="fa-brands fa-square-youtube"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://twitter.com">
+						<i class="fa-brands fa-square-twitter"></i>
+					</a>
+				</div>
+				<div class="copyright">
+					<hr class="break-line">
+					<p class="copyright-paragraph">@2024 NetNest - United Kingdom</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
+	</body>
 </html>
-
 
 
