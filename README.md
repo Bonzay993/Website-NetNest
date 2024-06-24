@@ -85,3 +85,30 @@ For detailed test cases and steps to test the website, please refer to the [Test
 For detailed changes and fixes, please refer to the latest [Releases Page](https://github.com/Bonzay993/Website-NetNest/releases)
 
 ### 8.4 Supported screens and browsers
+#### Supported Screens
+This website is designed to be responsive and works seamlessly across various screen sizes, including:
+- Desktop screens (1200 pixels and above)
+- Tablets and small laptops (976 pixels and above)
+- Mobile devices (less than 976 pixels)
+
+#### Supported Browsers
+The website is compatible with all modern browsers, including:
+- Google Chrome (latest versions)
+- Mozilla Firefox (latest versions)
+- Safari (latest versions)
+- Microsoft Edge (latest versions)
+- Opera (latest versions)
+
+#### Simulators Used for Testing
+To ensure the website looks great on all devices and browsers, the following simulators were used:
+- Chrome DevTools Device Mode
+- Firefox Responsive Design Mode
+- Safari Web Inspector
+- Microsoft Edge DevTools
+- Opera Developer Tools
+
+## 9. Deployment
+
+### 9.1 Gitpod 
+
+### 9.2 GitHub Pages
