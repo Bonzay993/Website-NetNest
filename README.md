@@ -197,3 +197,6 @@ Install in Gitpod:
 Whenever new changes are pushed to the main branch on GitHub, GitHub Pages will automatically rebuild and update the site.
 
 ## 10. Credits
+**[Font Awesome](https://fontawesome.com/search)** - Custom fonts
+
+
