@@ -201,4 +201,9 @@ Whenever new changes are pushed to the main branch on GitHub, GitHub Pages will 
 ## 10. Credits
 **[Font Awesome](https://fontawesome.com/search)** - Custom fonts -- Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
 
+**[VectorStock](https://www.vectorstock.com/)** - Images
+
+**[Vecteezy](https://www.vecteezy.com/)** -Images
+
+
 
