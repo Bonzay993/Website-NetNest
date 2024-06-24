@@ -48,14 +48,16 @@ The purpose of this project is to create an online platform where users can expl
 ## 6. Wireframes
 
 Wireframes for the website can be found in the `wireframes` directory of this repository. These wireframes provide a visual representation of the layout and design of the website pages.
-![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/wireframes/Website-Desktop.jpg)
+ <p align="center">
+   <img src="https://github.com/Bonzay993/Website-NetNest/blob/main/wireframes/Website-Desktop.jpg" style="width:60%; margin: 0 auto;"> 
+ </p>
 
 ## 7. Technology
 
-- **HTML5:** Provides the structure and content of the website.
-- **CSS3:** Used for styling and layout, ensuring a visually appealing design.
-- **JavaScript:** Adds interactivity and dynamic content to the Help section of the website.
-- **Font Awesome:** Provides scalable vector icons that can be customized with CSS.
+  - **HTML5:** Provides the structure and content of the website.
+  - **CSS3:** Used for styling and layout, ensuring a visually appealing design.
+  - **JavaScript:** Adds interactivity and dynamic content to the Help section of the website.
+  - **Font Awesome:** Provides scalable vector icons that can be customized with CSS.
 
 ## 8. Testing
 
@@ -72,10 +74,10 @@ Ensuring the quality and correctness of the code is crucial for a robust and rel
   - [Validate CSS](https://jigsaw.w3.org/css-validator/)
 
 #### Ligthouse Report
-
-![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report1.png)
-![alt text](https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report2.png)
-
+<p align="center">
+  <img src="https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report1.png" style="width:80%;">
+  <img src="https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/lighthouse-report2.png" style="width:80%;">
+</p>
 
 ### 8.2 Test Cases
 
