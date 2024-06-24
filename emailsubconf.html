@@ -1,114 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/style/style.css" rel="stylesheet" type="text/css">
-    <title>Thank you for subscribing</title>
-    <link rel="icon" href="./assets/img/icon-dark-blue.ico">
-</head>
-<body>
-    <!--Header starts-->
-    <header class="prevent-select">
-        <nav class="main-navigation main-page-padding">
-            <a href="index.html" class="logo">
-                <h2 class="logo-font"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg> NetNest</h2>
-            </a>
-            <ul class="menu-left menu-hidden">
-                <li class="menu-left-element">
-                    <a class="home menu-anchor" href="./index.html">Home</a>
-                </li>
-                <li class="menu-left-element">
-                    <a class="menu-anchor" href="./index.html#reviews">Reviews</a>
-                </li>
-                <li class="menu-left-element">
-                    <a class="menu-anchor" href="./index.html#pricing-cards">Pricing</a>
-                </li>
-            </ul>
-            <ul class="menu-right menu-hidden">
-                <li class="menu-right-element">
-                    <a class="menu-anchor" href="./help.html">Help</a>
-                </li>
-                <li class="menu-right-element contact-sales">
-                    <a class="menu-anchor contact-sales-anchor" href="./contact.html">Contact Sales</a>
-                </li>
-            </ul>
-        </nav>
-         <!--Hamburger menu-->
-         <div class="menu-hamburger hamburger-container">
-            <input class="hamburger-checkbox" type="checkbox">
-            <div class="hamburger-lines">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-            </div>  
-            <ul class="menu-items">
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html">Home</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#reviews">Reviews</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./index.html#pricing-cards">Pricing</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./contact.html">Contact Sales</a></li>
-                <li class="menu-items-links"><a class="menu-items-anchor" href="./help.html">Help</a></li>
-            </ul>
-        </div> 
-    </header>
-    <main>
-        <section id="subscribe-conf">
-            <div class="subscribe-conf-container">
-                <p class="subscribe-conf-paragraph">Thank you</p>
-                <br>
-                <h1 class="subscribe-conf-heading"> We look forward to <span class="subscribe-conf-heading-span">connecting</span> with you</h1>
-                <br>
-                <img class="smiling-cloud" src="./assets/img/smiling-cloud.png" alt="Smiling cloud">
-            </div>
-        </section>
-        <!--Get Started Section-->
-        <section id="get-started">
-            <div class="get-started-container prevent-select">
-                <div class="get-started-text">
-                    <h1 class="get-started-heading">Ready to get started?</h1>
-                    <p class="get-started-paragraph">Contact sales today!</p>
-                </div>
-                <div class="page-contact-sales">
-                    <a class="page-contact-sales-btn" href="./contact.html">
-                        Contact Sales
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!--Footer Starts-->
-    <footer>
-        <div class="footer-container prevent-select">
-            <div class="footer-col-1">
-                <h2><i class="fa-solid fa-network-wired"></i> NetNest</h2>
-                <form class="footer-form" action="./emailsubconf.html" method="get">
-                    <label for="footer-email" class="email-label">Subscribe to NetNest Communications</label>
-                    <input type="email" id="footer-email" name="footer-email" class="email footer-email" placeholder="Email*" required><br>
-                    <input type="checkbox" id="footer-checkbox" name="footer-checkbox" class="checkbox">
-                    <label for="footer-checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label><br>
-                    <input type="submit" value="Submit" class="footer-submit">
-                </form>
-            </div>
-             <div class="footer-col-2">
-                <h2 class="footer-anchor footer-col2-heading">Useful Links</h2>
-                <a class="footer-anchor" href="./contact.html">Contact</a>
-                <a class="footer-anchor" href="./index.html#pricing-cards">Pricing</a>
-                <a class="footer-anchor" href="./index.html#reviews">Reviews</a>
-                <a class="footer-anchor" href="./help.html">Help</a>
-            </div>
-             <div class="social-media-links">
-                 <h2 class="social-media-heading">Follow us</h2>
-                 <a class="footer-anchor social-media-anchor" href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
-                 <a class="footer-anchor social-media-anchor" href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
-             </div>
-             <div class="copyright">
-                 <hr class="break-line">
-                 <p class="copyright-paragraph">@2024 NetNest - United Kingdom</p>
-             </div>
-        </div>
-     </footer>
-     <script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
- </body>
- </html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/style/style.css" rel="stylesheet" type="text/css">
+		<title>Thank you for subscribing</title>
+		<link rel="icon" href="./assets/img/icon-dark-blue.ico">
+	</head>
+	<body>
+		<!--Header starts-->
+		<header class="prevent-select">
+			<nav class="main-navigation main-page-padding">
+				<a href="index.html" class="logo">
+					<h2 class="logo-font">
+						<svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+							<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+							<path fill=#103c75 d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z" />
+						</svg> NetNest
+					</h2>
+				</a>
+				<ul class="menu-left menu-hidden">
+					<li class="menu-left-element">
+						<a class="home menu-anchor" href="./index.html">Home</a>
+					</li>
+					<li class="menu-left-element">
+						<a class="menu-anchor" href="./index.html#reviews">Reviews</a>
+					</li>
+					<li class="menu-left-element">
+						<a class="menu-anchor" href="./index.html#pricing-cards">Pricing</a>
+					</li>
+				</ul>
+				<ul class="menu-right menu-hidden">
+					<li class="menu-right-element">
+						<a class="menu-anchor" href="./help.html">Help</a>
+					</li>
+					<li class="menu-right-element contact-sales">
+						<a class="menu-anchor contact-sales-anchor" href="./contact.html">Contact Sales</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Hamburger menu-->
+			<div class="menu-hamburger hamburger-container">
+				<input class="hamburger-checkbox" type="checkbox">
+				<div class="hamburger-lines">
+					<span class="bar bar1"></span>
+					<span class="bar bar2"></span>
+					<span class="bar bar3"></span>
+				</div>
+				<ul class="menu-items">
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html">Home</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html#reviews">Reviews</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./index.html#pricing-cards">Pricing</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./contact.html">Contact Sales</a>
+					</li>
+					<li class="menu-items-links">
+						<a class="menu-items-anchor" href="./help.html">Help</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+            <!--Thank you for subscribe-->
+			<section id="subscribe-conf">
+				<div class="subscribe-conf-container">
+					<p class="subscribe-conf-paragraph">Thank you</p>
+					<br>
+					<h1 class="subscribe-conf-heading"> We look forward to <span class="subscribe-conf-heading-span">connecting</span> with you </h1>
+					<br>
+					<img class="smiling-cloud" src="./assets/img/smiling-cloud.png" alt="Smiling cloud">
+				</div>
+			</section>
+			<!--Get Started Section-->
+			<section id="get-started">
+				<div class="get-started-container prevent-select">
+					<div class="get-started-text">
+						<h1 class="get-started-heading">Ready to get started?</h1>
+						<p class="get-started-paragraph">Contact sales today!</p>
+					</div>
+					<div class="page-contact-sales">
+						<a class="page-contact-sales-btn" href="./contact.html"> Contact Sales </a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--Footer Starts-->
+		<footer>
+			<div class="footer-container prevent-select">
+				<div class="footer-col-1">
+					<h2>
+						<i class="fa-solid fa-network-wired"></i> NetNest
+					</h2>
+					<form class="footer-form" action="./emailsubconf.html" method="get">
+						<label for="footer-email" class="email-label">Subscribe to NetNest Communications</label>
+						<input type="email" id="footer-email" name="footer-email" class="email footer-email" placeholder="Email*" required>
+						<br>
+						<input type="checkbox" id="footer-checkbox" name="footer-checkbox" class="checkbox">
+						<label for="footer-checkbox" class="checkbox-label">Yes, subscribe me to NetNest news, offers, product updates, newsletters and events.</label>
+						<br>
+						<input type="submit" value="Submit" class="footer-submit">
+					</form>
+				</div>
+				<div class="footer-col-2">
+					<h2 class="footer-anchor footer-col2-heading">Useful Links</h2>
+					<a class="footer-anchor" href="./contact.html">Contact</a>
+					<a class="footer-anchor" href="./index.html#pricing-cards">Pricing</a>
+					<a class="footer-anchor" href="./index.html#reviews">Reviews</a>
+					<a class="footer-anchor" href="./help.html">Help</a>
+				</div>
+				<div class="social-media-links">
+					<h2 class="social-media-heading">Follow us</h2>
+					<a class="footer-anchor social-media-anchor" href="https://facebook.com">
+						<i class="fa-brands fa-square-facebook"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://instagram.com">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://youtube.com">
+						<i class="fa-brands fa-square-youtube"></i>
+					</a>
+					<a class="footer-anchor social-media-anchor" href="https://twitter.com">
+						<i class="fa-brands fa-square-twitter"></i>
+					</a>
+				</div>
+				<div class="copyright">
+					<hr class="break-line">
+					<p class="copyright-paragraph">@2024 NetNest - United Kingdom</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/00bb1ba651.js" crossorigin="anonymous"></script>
+	</body>
+</html>
