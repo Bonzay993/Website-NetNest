@@ -115,9 +115,9 @@ To ensure the website looks great on all devices and browsers, the following sim
 
 ### 9.1 Gitpod 
 
-#### Linking the Repository to GitHub
+#### 1. Linking the Repository to GitHub
 
-1. **Clone the Repository:**
+ **Clone the Repository:**
    - Open a terminal.
    - Navigate to the directory where the repository should be cloned.
    - Use the following command to clone the repository:
@@ -125,7 +125,7 @@ To ensure the website looks great on all devices and browsers, the following sim
      git clone https://github.com/Bonzay993/Website-NetNest.git
      ```
 
-2. **Link to GitHub:**
+ **Link to GitHub:**
    - Navigate into the cloned repository directory:
      ```bash
      cd Website-NetNest
@@ -135,26 +135,26 @@ To ensure the website looks great on all devices and browsers, the following sim
      git remote add origin https://github.com/Bonzay993/Website-NetNest.git
      ```
 
-3. **Push Your Code:**
+ **Push Your Code:**
    - Push local changes to GitHub:
      ```bash
      git push -u origin main
      ```
    - Replace `main` with the name of the main branch if it differs.
 
-#### Opening the Workspace in Gitpod
+#### 2. Opening the Workspace in Gitpod
 
-1. **Access Gitpod:**
+ **Access Gitpod:**
    - Go to [Gitpod](https://gitpod.io/) and sign in with your GitHub account.
 
-2. **Open Workspace:**
+ **Open Workspace:**
    - Open the repository directly in Gitpod by appending `gitpod.io/#` to the repository URL:
      ```
      https://gitpod.io/#https://github.com/Bonzay993/Website-NetNest
      ```
    - This URL will automatically open the repository in a Gitpod workspace.
 
-#### Configuring Gitpod Extensions
+#### 3. Configuring Gitpod Extensions
 
 Gitpod allows enhancing the development environment with extensions. Here are recommended extensions:
 Install in Gitpod:
@@ -162,13 +162,13 @@ Install in Gitpod:
      - Go to Extensions.
      - Search for "VSCode Icons" and click Install.
 
-1. **Live Server:**
+ **Live Server:**
    - Automatically reloads the website when files are saved.
    
-2. **Prettier:**
+ **Prettier:**
    - Code formatter that maintains code cleanliness and consistency.
    
-3. **VSCode Icons:**
+ **VSCode Icons:**
    - Adds icons to files and folders in the file explorer for better navigation.
      
 
