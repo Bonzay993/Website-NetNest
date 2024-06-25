@@ -205,5 +205,7 @@ Whenever new changes are pushed to the main branch on GitHub, GitHub Pages will 
 
 **[Vecteezy](https://www.vecteezy.com/)** -Images
 
+**[Stack Overflow](https://stackoverflow.com/)** - JavaScript code for Help page
+
 
 
