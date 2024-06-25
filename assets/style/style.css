@@ -896,7 +896,7 @@ footer {
 	padding-bottom: 40px;
 	color: #103c75;
 }
-
+/* help rectangles when not active*/
 .drop-down {
 	background-color: white;
 	color: #000000cc;
@@ -912,7 +912,7 @@ footer {
 	align-items: center;
 	font-weight: bold;
 }
-
+/* change color when active*/
 .active,
 .drop-down:hover {
 	background-color: #f1f7f5;
