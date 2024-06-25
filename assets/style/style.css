@@ -785,7 +785,7 @@ footer {
 	flex-flow: row wrap;
 	gap: 20px;
 }
-
+/* recaptcha style*/
 .g-recaptcha {
 	flex-basis: 100%;
 	align-content: center;
