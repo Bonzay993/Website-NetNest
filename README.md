@@ -58,10 +58,10 @@ Wireframes for the website can be found in the `wireframes` directory of this re
 
 ## 7. Technology
 
-  - **HTML5:** Provides the structure and content of the website.
-  - **CSS3:** Used for styling and layout, ensuring a visually appealing design.
-  - **JavaScript:** Adds interactivity and dynamic content to the Help section of the website.
-  - **Font Awesome:** Provides scalable vector icons that can be customized with CSS.
+  - **[HTML:](https://www.w3schools.com/html/)** Provides the structure and content of the website.
+  - **[CSS3:](https://www.w3schools.com/css/)** Used for styling and layout, ensuring a visually appealing design.
+  - **[JavaScript:](https://www.w3schools.com/js/)** Adds interactivity and dynamic content to the Help section of the website.
+  - **[Font Awesome:](https://fontawesome.com/search)** Provides scalable vector icons that can be customized with CSS.
 
 ## 8. Testing
 
