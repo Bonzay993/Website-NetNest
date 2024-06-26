@@ -1,6 +1,10 @@
 # NetNest Website
 
 Welcome to the NetNest Website project! This website is designed to showcase the services and offerings of NetNest, a business specializing in hosting services.
+<p align="center">
+   <img src="https://github.com/Bonzay993/Website-NetNest/blob/main/testcases/img/Netnest-Mockup.png" style="margin: 0 auto;"> 
+ </p>
+
 
 ## 1. Purpose of the Project
 
